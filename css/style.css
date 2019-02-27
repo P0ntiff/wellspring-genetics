@@ -100,10 +100,9 @@ p.bodytxt {
 
 #mainNavBar {
   background-color: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
-  background-color: transparent;
   display: flex;
   justify-content: space-between;
 }
@@ -118,59 +117,44 @@ p.bodytxt {
   font-family: "Montserrat", sans-serif;
 }
 
+#mainNavBar .navbar-brand {
+  padding: 1.5em;
+}
+
+#mainNavBar .hamMenu {
+  width: 80px;
+  padding: 1em;
+  margin-right: 20px;
+}
+
 #mainNavBar .navbar-nav .nav-item .nav-link.active,
 #mainNavBar .navbar-nav .nav-item .nav-link:hover {
   color: #1a9d9e;
 }
 
-@media only screen and (min-width: 1024px) {
-  #mainNavBar {
-    -webkit-transition: padding-top 0.2s, padding-bottom 0.2s;
-    -moz-transition: padding-top 0.2s, padding-bottom 0.2s;
-    transition: padding-top 0.2s, padding-bottom 0.2s;
-  }
-
-  nav ul {
-    position: inherit;
-    width: auto;
-    background: none;
-    height: auto;
-    display: flex;
-    padding-top: 0;
-  }
-
-  #mainNavBar .navbar-brand {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
-    width: 240px;
-    padding: 1em;
-    background: transparent;
-  }
-
-  #mainNavBar .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em !important;
-  }
-
-  #mainNavBar.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #fdfdfd;
-    font-size: 0.9em;
-    padding: 10px 0;
-  }
+#mainNavBar .navbar-brand {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 240px;
+  padding: 0.8em;
+  background: transparent;
 }
 
-@media only screen and (max-width: 650px) {
-  #mainNavBar .navbar-brand {
-    width: 200px;
-    padding: 1em;
-    background: transparent;
-  }
+#mainNavBar.navbar-shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fdfdfd;
+  font-size: 0.9em;
 }
 
-header.masthead {
-  position: relative;
+#mainNavBar.navbar-shrink .navbar-brand {
+  width: 180px;
+  padding-left: 1.5em;
+}
+
+#hero {
+  position: center;
   text-align: center;
   color: #ffffff;
   background-image: url("../images/beach_photo.jpg");
@@ -183,35 +167,103 @@ header.masthead {
   background-size: cover;
 }
 
-header.masthead:before {
+#hero:before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, #f5f5f5, #2d2d2d);
-  opacity: 0.3;
+  background-image: linear-gradient(to bottom, #2d2d2d, #2d2d2d);
+  opacity: 0.4;
 }
 
-header.masthead .welcome {
-  position: left;
-  text-align: left;
-  padding-top: 300px;
+#hero .welcome {
+  position: center;
+  text-align: center;
+  padding-top: 200px;
   padding-bottom: 300px;
 }
 
-header.masthead .welcome .tagline {
+#hero .welcome .tagline {
   font-size: 40px;
   font-weight: 400px;
-  line-height: 40px;
-  padding: 50px;
+  line-height: 50px;
+  padding: 0px;
   margin-bottom: 40px;
   font-family: "Montserrat Bold", sans-serif;
-  color: #2d2d2d;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 0px;
 }
 
-.improve {
+#hero .welcome .tagline .improve {
   color: #1a9d9e;
+  font-size: 42px;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 1024px) {
+  #mainNavBar {
+    background-color: transparent;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: flex;
+    padding-top: 0;
+  }
+
+  #mainNavBar .navbar-brand {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 260px;
+    padding: 1em;
+    background: transparent;
+  }
+
+  #mainNavBar .navbar-nav .nav-item .nav-link {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: 1.1em;
+    padding: 1.5em 1.2em !important;
+  }
+
+  #mainNavBar.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #fdfdfd;
+    font-size: 0.9em;
+    height: 120px;
+    padding: 5px 0;
+  }
+
+  #mainNavBar.navbar-shrink .navbar-brand {
+    width: 220px;
+  }
+
+
+  #hero .welcome {
+    position: left;
+    text-align: left;
+  }
+
+  #hero .welcome .tagline {
+    color: #2d2d2d;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+
+  }
+
+  #hero:before {
+    opacity: 0.1;
+  }
+
+
 }
