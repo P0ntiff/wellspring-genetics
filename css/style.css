@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat-Bold";
+    font-weight: 400;
+}
+
+
+p,
+blockquote {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    padding: 0.9em 1.2em;
+}
+
+a {
+    color: #1a9d9e;
+}
+
+a:hover {
+    color: #2d2d2d;
+}
+
+section {
+    padding: 50px;
+}
+
+section h2.heading {
+    font-size: 40px;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'Montserrat Regular';
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-shadow: rgba(0, 0, 0, 0.1) 3px 3px 0px;
+    color: white;
+}
+
+section h3.subheading {
+    font-size: 24px;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'Montserrat Bold', sans-serif;
+    margin-bottom: 10px;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+    color: white;
+}
+
+p.bodytxt {
+    font-size: 18px;
+    padding: 25px;
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#appointments {
+    background-color: #1a9d9e;
+}
+
+#appointments .wellspring-icon {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+#appointments .appt-cell {
+    margin-bottom: 50px;
+}
+
+#genetic-testing {
+    background-color: #ffffff
+}
+
+#mainNavBar {
+    background-color: #ffffff;
+}
+
+#mainNavBar .navbar-nav .nav-item .nav-link {
+    font-size: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em 0;
+    letter-spacing: 1.1px;
+    color: #2d2d2d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#mainNavBar .navbar-nav .nav-item .nav-link.active,
+#mainNavBar .navbar-nav .nav-item .nav-link:hover {
+    color: #1a9d9e;
+}
+
+
+
+@media (min-width: 1024px) {
+    #mainNavBar {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-transition: padding-top 0.2s, padding-bottom 0.2s;
+        -moz-transition: padding-top 0.2s, padding-bottom 0.2s;
+        transition: padding-top 0.2s, padding-bottom 0.2s;
+        border: none;
+        background-color: transparent;
+    }
+
+    #mainNavBar .navbar-logo {
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        width: 240px;
+        padding: 1em;
+        background: transparent
+    }
+
+    #mainNavBar .navbar-nav .nav-item .nav-link {
+        padding: 1.1em 1em !important;
+    }
+
+    #mainNavBar.navbar-shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: #fdfdfd;
+        font-size: 0.9em;
+        padding: 10px 0;
+    }
+}
+
+header.masthead {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    background-image: url("../images/beach_photo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header.masthead:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #f5f5f5, #2d2d2d);
+    opacity: 0.3;
+}
+
+header.masthead .welcome {
+    position: left;
+    text-align: left;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+header.masthead .welcome .tagline {
+    font-size: 40px;
+    font-weight: 400px;
+    line-height: 40px;
+    padding: 50px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat Bold', sans-serif;
+    color: #2d2d2d;
+}
+
+.improve {
+    color: #1a9d9e;
+    font-weight: 700
+}

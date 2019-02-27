@@ -1,18 +1,183 @@
 <!DOCTYPE html>
-<html>
-<head> 
-	<title> Wellspring Genetics </title>
+<html lang="en">
+
+<head>
+	<title>Wellspring Genetics</title>
 	<meta charset="utf-8">
+
 	<meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- stylesheets-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- Bootstrap scripts-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+
+	<script src="js/scripts.js"></script>
+
+	<!--- <a class="text-primary" href="appointments.html">Appointments</a> -->
 </head>
 
 <body id="page-top">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavBar">
+		<div class="container">
+			<img src="images/wellspring_logo.png" alt="Wellspring Genetics" class="navbar-logo navbar-logo-expanded img-fluid">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+			 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav text-uppercase ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Appointments</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">News</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Contact Us</a>
+					</li>
+					<li>
+						<form action="#">
+							<button class="btn btn-default navbar-btn">Book Online</button>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-Wellspring Genetics
+	<header class="masthead">
+		<div class="container">
+			<div class="row">
+				<div class="col md-4">
+					<div class="welcome">
+						<div class="tagline"><span class="improve">Improve</span> your health with genetic counselling and testing</div>
+						<a class="btn btn-primary btn-xl text-uppercase" href="#">Make An Appointment</a>
+					</div>
+				</div>
+				<div class="col md-8"></div>
+			</div>
+		</div>
+	</header>
+
+	<section id="appointments">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-left">
+					<h2 class="heading"> What do we offer?</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4"><img class="img-fluid wellspring-icon" src="images/placeholder.png"> </div>
+				<div class="col-sm-8">
+					<h3 class="subheading text-uppercase">Prenatal or Pre-Pregnancy Appointment</h3>
+					<p class="bodytxt">
+						For couples and single patients interested in gene testing to decrease their chance of having a child with a
+						serious health problem.
+					</p>
+				</div>
+			</div>
+			<div class="row appt-cell">
+				<div class="col-sm-6"></div>
+				<div class="col-sm-6 text-center">
+					<a class="btn btn-primary btn-xl text-uppercase" href="#">Learn More</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4"><img class="img-fluid wellspring-icon" src="images/placeholder.png"> </div>
+				<div class="col-sm-8">
+					<h3 class="subheading text-uppercase">Well Adult Appointment</h3>
+					<p class="bodytxt">
+						For healthy adults interested in a gene test that may predict a future health problem.
+					</p>
+				</div>
+			</div>
+			<div class="row appt-cell">
+				<div class="col-sm-6"></div>
+				<div class="col-sm-6 text-center">
+					<a class="btn btn-primary btn-xl text-uppercase" href="#">Learn More</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<section id="genetic-testing">
+		<div class="container py-4">
+			<div class="row text-center py-5">
+				<div class="col-lg-4 mb-4">
+					<div class="card h-100 border-0 shadow py-4">
+						<div class="card-body d-flex flex-column justify-content-start align-items-center">
+							<span> <img class="img-fluid wellspring-icon" src="images/placeholder.png"> </span>
+							<h4 class="card-title">Certified, world-leading laboratories</a></h4>
+							<p class="card-text">
+								Wellspring Genetics uses leading Australian and international laboratories including <strong>Color, </strong>
+								...
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 mb-4">
+					<div class="card h-100 border-0 shadow py-4">
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="card h-100 border-0 shadow py-4">
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</section>
+
+
+
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	Wellspring Genetics
+
+
+
 
 </body>
 
