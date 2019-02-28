@@ -51,9 +51,14 @@ section {
   padding: 50px;
 }
 
+
+.bg-green {
+  background-color: #1a9d9e;
+}
+
 section h2.heading {
   font-size: 40px;
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   font-family: "Montserrat Regular";
   margin-top: 0;
@@ -64,7 +69,7 @@ section h2.heading {
 
 section h3.subheading {
   font-size: 24px;
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   font-family: "Montserrat Bold", sans-serif;
   margin-bottom: 10px;
@@ -75,7 +80,7 @@ section h3.subheading {
 p.bodytxt {
   font-size: 18px;
   padding: 25px;
-  text-align: left;
+  text-align: center;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -95,11 +100,56 @@ p.bodytxt {
 }
 
 #genetic-testing {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
+}
+
+#genetic-testing .card {
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+#genetic-testing .icon-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 180px;
+  height: 180px;
+  background-color: #1a9d9e;
+
+  border-radius: 90px;
+}
+
+#genetic-testing .icon-holder .testing-icon {
+  max-width: 120px;
+  max-height: 120px;
+  display: block;
+}
+
+#genetic-testing .card-body {
+  height: 600px;
+}
+
+#genetic-testing .card-body .card-title {
+  text-align: center;
+  color: #2d2d2d;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-family: "Montserrat Bold", sans-serif;
+  font-weight: 400;
+}
+
+#genetic-testing .card-body .card-text {
+  color: #2d2d2d;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 #mainNavBar {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
@@ -132,6 +182,30 @@ p.bodytxt {
   color: #1a9d9e;
 }
 
+.btn-outline {
+  background: #1a9d9e;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.btn-text {
+  font-family: "Montserrat Bold", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+#mainNavBar .btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  background: #1a9d9e;
+  color: #ffffff;
+  border-color: #2d2d2d;
+}
+
+
 #mainNavBar .navbar-brand {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -157,6 +231,7 @@ p.bodytxt {
   position: center;
   text-align: center;
   color: #ffffff;
+  height: 85%;
   background-image: url("../images/beach_photo.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -170,39 +245,57 @@ p.bodytxt {
 #hero:before {
   content: "";
   position: absolute;
+  height: 85%;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background-image: linear-gradient(to bottom, #2d2d2d, #2d2d2d);
-  opacity: 0.4;
+  opacity: 0.6;
+  z-index: 0;
 }
 
-#hero .welcome {
-  position: center;
+#hero .herobox {
+  margin: auto;
+  width: 90%;
+  z-index: 1;
+}
+
+#hero .herobox .welcome {
+  margin: auto;
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 
 #hero .welcome .tagline {
-  font-size: 40px;
-  font-weight: 400px;
-  line-height: 50px;
+  font-size: 50px;
+  font-weight: 700px;
+  line-height: 1.3em;
   padding: 0px;
   margin-bottom: 40px;
-  font-family: "Montserrat Bold", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
-  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 0px;
+  text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 0px;
 }
 
 #hero .welcome .tagline .improve {
   color: #1a9d9e;
-  font-size: 42px;
+  font-size: 55px;
   font-weight: 700;
 }
 
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 50%;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 70%;
+  }
+
   #mainNavBar {
     background-color: transparent;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -234,6 +327,14 @@ p.bodytxt {
     transition: all 0.3s;
     margin-top: 1.1em;
     padding: 1.5em 1.2em !important;
+    height: 20px;
+  }
+
+  #mainNavBar .navbar-nav .nav-item .btn-outline {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-top: 1.5em 1.2em !important;
   }
 
   #mainNavBar.navbar-shrink {
@@ -249,21 +350,58 @@ p.bodytxt {
     width: 220px;
   }
 
+  #hero {
+    height: 95%;
+    background-image: url("../images/beach_photo_crop_2.jpg");
+    text-align: left;
+  }
+
+  #hero:before {
+    height: 95%;
+    opacity: 0.1;
+  }
+
+  #hero .herobox {
+    height: 50%;
+    margin: 0;
+    position: left;
+    padding-top: 10px;
+    width: 41%;
+    text-align: left;
+  }
 
   #hero .welcome {
     position: left;
     text-align: left;
+    padding-top: 150px;
+    font-size: 40px;
+    font-weight: 700px;
+    line-height: 1.5em;
   }
 
   #hero .welcome .tagline {
     color: #2d2d2d;
     text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
-
+    text-align: left;
+    font-weight: 400;
+    font-size: 40px;
   }
 
-  #hero:before {
-    opacity: 0.1;
+
+  #hero .welcome .tagline .improve {
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
   }
 
+  section h2.heading {
+    text-align: left;
+  }
+
+  section h3.subheading {
+    text-align: left;
+  }
+
+  p.bodytxt {
+    text-align: left;
+  }
 
 }
