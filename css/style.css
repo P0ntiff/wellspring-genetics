@@ -34,47 +34,76 @@ ul {
 }
 
 .container {
-  text-align: center;
   width: 100%;
-  padding: 0.9em 1.2em;
+}
+
+.green-container {
+  width: 100%;
+  background: #1a9d9e;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.grey-container {
+  width: 100%;
+  background: #f5f5f5;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.blue-container {
+  width: 50%;
+  margin: auto;
+  background-color: rgba(203, 226, 216, 0.83);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+#get-in-touch:before {
+  content: "";
+  background-color: #cbe2b8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 0;
+
+}
+
+.grey-container .row {
+  width: 85% !important;
+  margin: auto;
 }
 
 a {
-  color: #1a9d9e;
-}
-
-a:hover {
   color: #2d2d2d;
 }
-
-section {
-  padding: 50px;
+a:hover {
+  color: #f5f5f5;
 }
-
 
 .bg-green {
   background-color: #1a9d9e;
 }
 
-section h2.heading {
+h2.heading {
   font-size: 40px;
   text-align: center;
   font-weight: 700;
   font-family: "Montserrat Regular";
   margin-top: 0;
-  margin-bottom: 80px;
+  padding: 1em 1em;
   text-shadow: rgba(0, 0, 0, 0.1) 3px 3px 0px;
-  color: white;
 }
 
-section h3.subheading {
+h3.subheading {
   font-size: 24px;
   text-align: center;
   font-weight: 700;
   font-family: "Montserrat Bold", sans-serif;
   margin-bottom: 10px;
+  margin-top: 10px;
   text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
-  color: white;
 }
 
 p.bodytxt {
@@ -86,67 +115,53 @@ p.bodytxt {
   color: white;
 }
 
-#appointments {
-  background-color: #1a9d9e;
+#appointments h2.heading {
+  color: white;
 }
 
-#appointments .wellspring-icon {
-  max-height: 150px;
-  max-width: 150px;
+#appointments h3.subheading {
+  color: white;
 }
 
-#appointments .appt-cell {
-  margin-bottom: 50px;
-}
-
-#genetic-testing {
-  background-color: #f5f5f5;
-}
-
-#genetic-testing .card {
-  box-shadow: 3px 5px rgba(0, 0, 0, 0.05);
-}
-
-
-#genetic-testing .icon-holder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 180px;
-  height: 180px;
-  background-color: #1a9d9e;
-
-  border-radius: 90px;
-}
-
-#genetic-testing .icon-holder .testing-icon {
-  max-width: 120px;
-  max-height: 120px;
-  display: block;
-}
-
-#genetic-testing .card-body {
-  height: 600px;
-}
-
-#genetic-testing .card-body .card-title {
-  text-align: center;
+#genetic-testing h2.heading {
   color: #2d2d2d;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 24px;
+}
+
+#team h2.heading {
+  color: #2d2d2d;
+  margin-top: 0px !important;
+  margin-bottom: 30px !important;
+}
+
+.btn-outline {
+  background: #1a9d9e;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  color: #ffffff;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-text {
   font-family: "Montserrat Bold", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
-#genetic-testing .card-body .card-text {
-  color: #2d2d2d;
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  margin-bottom: 20px;
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  background: #138485;
+  color: #ffffff;
+  border-color: #2d2d2d;
 }
+
 
 #mainNavBar {
   background-color: #f5f5f5;
@@ -155,6 +170,7 @@ p.bodytxt {
   border: none;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 #mainNavBar .navbar-nav .nav-item .nav-link {
@@ -182,30 +198,6 @@ p.bodytxt {
   color: #1a9d9e;
 }
 
-.btn-outline {
-  background: #1a9d9e;
-  border: 2px solid #000000;
-  border-radius: 30px;
-  color: #ffffff;
-}
-
-.btn-text {
-  font-family: "Montserrat Bold", sans-serif;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-#mainNavBar .btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-  background: #1a9d9e;
-  color: #ffffff;
-  border-color: #2d2d2d;
-}
-
-
 #mainNavBar .navbar-brand {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -228,10 +220,8 @@ p.bodytxt {
 }
 
 #hero {
-  position: center;
-  text-align: center;
   color: #ffffff;
-  height: 85%;
+  height: 80%;
   background-image: url("../images/beach_photo.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -245,7 +235,7 @@ p.bodytxt {
 #hero:before {
   content: "";
   position: absolute;
-  height: 85%;
+  height: 80%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -285,16 +275,166 @@ p.bodytxt {
   font-weight: 700;
 }
 
+#appointments .wellspring-icon {
+  max-height: 150px;
+  max-width: 150px;
+  display: block;
+  margin: auto;
+}
+
+#appointments .appt-cell {
+  margin-bottom: 35px;
+}
+
+#genetic-testing .card-container {
+  max-width: 100%;
+  margin: auto;
+}
+
+#genetic-testing .card {
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+#genetic-testing .icon-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  width: 180px;
+  height: 180px;
+  background-color: #1a9d9e;
+
+  border-radius: 90px;
+}
+
+#genetic-testing .icon-holder .testing-icon {
+  max-width: 120px;
+  max-height: 120px;
+  display: block; 
+}
+
+#genetic-testing .card-body {
+  min-height: 500px;
+}
+
+#genetic-testing .card-body .card-title {
+  text-align: center;
+  color: #2d2d2d;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: "Montserrat Bold", sans-serif;
+  font-weight: 400;
+}
+
+#genetic-testing .card-body .card-text {
+  color: #2d2d2d;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#team .row.team-box {
+  background-color: #1a9d9e;
+  margin: auto;
+  border-radius: 15px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+#team .team-member {
+  height: 260px;
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+}
+
+#team .row.team-box .person-name {
+  font-family: "Montserrat Regular";
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color :white;
+  padding-top: 1.2em;
+  padding-bottom: 0.8em;
+}
+
+#team .row.team-box .subheading {
+  font-size: 20px;
+  color: white;
+}
+
+#team .row.team-box .quals {
+  font-size: 16px !important;
+}
+
+#team p.bodytxt {
+  font-size: 16px;
+  padding-top: 0em;
+  padding-right: 30px;
+}
+
+#more {
+  display: none;
+}
+
+#team .read-more-btn {
+  display: block;
+  margin: auto;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1800px) {
+  .container {
+    max-width: 75% !important;
+  }
+
+  #hero .herobox {
+    margin-top: 6% !important;
+  }
+
+  .green-container .row {
+    width: 75% !important;
+    margin: auto;
+  }
+
+  .grey-container .row {
+    width: 75% !important;
+    margin: auto;
+  }
+  
+
+  #genetic-testing .card-body {
+    min-height: 550px !important;
+  }
+
+
+}
+
 @media only screen and (min-width: 1400px) {
   .container {
-    max-width: 50%;
+    max-width: 80%;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1100px) {
   .container {
-    max-width: 70%;
+    max-width: 95%;
   }
+
+  .green-container .row {
+    width: 90%;
+    margin: auto;
+  }
+
 
   #mainNavBar {
     background-color: transparent;
@@ -310,6 +450,20 @@ p.bodytxt {
     height: auto;
     display: flex;
     padding-top: 0;
+  }
+
+  h2.heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  h3.subheading {
+    text-align: left;
+  }
+
+  p.bodytxt {
+    text-align: left;
   }
 
   #mainNavBar .navbar-brand {
@@ -352,7 +506,7 @@ p.bodytxt {
 
   #hero {
     height: 95%;
-    background-image: url("../images/beach_photo_crop_2.jpg");
+    background-image: url("../images/beach_photo_crop_3.jpg");
     text-align: left;
   }
 
@@ -365,8 +519,9 @@ p.bodytxt {
     height: 50%;
     margin: 0;
     position: left;
-    padding-top: 10px;
-    width: 41%;
+    margin-top: 2%;
+    margin-left: 8%;
+    width: 500px;
     text-align: left;
   }
 
@@ -379,6 +534,10 @@ p.bodytxt {
     line-height: 1.5em;
   }
 
+  #hero .welcome .btn-outline {
+    float : left;
+  }
+
   #hero .welcome .tagline {
     color: #2d2d2d;
     text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
@@ -387,21 +546,23 @@ p.bodytxt {
     font-size: 40px;
   }
 
-
   #hero .welcome .tagline .improve {
     text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
   }
 
-  section h2.heading {
-    text-align: left;
+
+  #genetic-testing .card-body {
+    min-height: 625px;
   }
 
-  section h3.subheading {
+  #team .row.team-box .person-name {
     text-align: left;
+  }
+    
+  #team .read-more-btn {
+    display: block;
+    margin: 0;
   }
 
-  p.bodytxt {
-    text-align: left;
-  }
 
 }

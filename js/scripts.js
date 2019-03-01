@@ -5,3 +5,16 @@ $(window).scroll(function() {
     $("nav").removeClass("navbar-shrink");
   }
 });
+
+function readMore() {
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("moreBtn");
+
+  if (moreText.style.display === "inline") {
+    btnText.innerHTML = "Read More";
+    moreText.style.display = "none";
+  } else {
+    btnText.innerHTML = "Read Less";
+    moreText.style.display = "inline";
+  }
+}
