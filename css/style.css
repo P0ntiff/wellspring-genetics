@@ -173,6 +173,10 @@ p.bodytxt {
   text-align: center;
 }
 
+#mainNavBar .navbar-nav {
+  margin-left: auto;
+}
+
 #mainNavBar .navbar-nav .nav-item .nav-link {
   font-size: 100%;
   font-weight: 600;
@@ -183,11 +187,17 @@ p.bodytxt {
   font-family: "Montserrat", sans-serif;
 }
 
+#mainNavBar .navbar-nav .nav-item.btn-nav {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
 #mainNavBar .navbar-brand {
   padding: 1.5em;
 }
 
-#mainNavBar .hamMenu {
+
+#mainNavBar .ham-menu {
   width: 80px;
   padding: 1em;
   margin-right: 20px;
@@ -484,12 +494,19 @@ p.bodytxt {
     height: 20px;
   }
 
-  #mainNavBar .navbar-nav .nav-item .btn-outline {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    padding-top: 1.5em 1.2em !important;
+  #mainNavBar .navbar-nav .nav-item.btn-nav {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
+
+  #mainNavBar .navbar-nav .nav-item .nav-link.btn-outline {
+    margin-top: 1.8em;
+    margin-left: 0.5em;
+    height: auto !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
 
   #mainNavBar.navbar-shrink {
     padding-top: 0;
