@@ -1,78 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 
-html,
-body {
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat-Bold";
-  font-weight: 400;
-}
-
-p,
-blockquote {
-  font-size: 0.9em;
-  line-height: 1.5em;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 100%;
-}
-
-.green-container {
-  width: 100%;
-  background: #1a9d9e;
-  align-items: center;
-  padding-bottom: 15px;
-}
-
-.grey-container {
-  width: 100%;
-  background: #f5f5f5;
-  align-items: center;
-  padding-bottom: 15px;
-}
-
 .blue-container {
-  width: 50%;
+  width: 80%;
   margin: auto;
+  margin-top: 80px;
   background-color: rgba(203, 226, 216, 0.83);
   box-shadow: 3px 3px rgba(0, 0, 0, 0.05);
-}
-
-#get-in-touch:before {
-  content: "";
-  background-color: #cbe2b8;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  z-index: 0;
-
-}
-
-.grey-container .row {
-  width: 85% !important;
-  margin: auto;
 }
 
 a {
@@ -80,39 +13,6 @@ a {
 }
 a:hover {
   color: #f5f5f5;
-}
-
-.bg-green {
-  background-color: #1a9d9e;
-}
-
-h2.heading {
-  font-size: 40px;
-  text-align: center;
-  font-weight: 700;
-  font-family: "Montserrat Regular";
-  margin-top: 0;
-  padding: 1em 1em;
-  text-shadow: rgba(0, 0, 0, 0.1) 3px 3px 0px;
-}
-
-h3.subheading {
-  font-size: 24px;
-  text-align: center;
-  font-weight: 700;
-  font-family: "Montserrat Bold", sans-serif;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
-}
-
-p.bodytxt {
-  font-size: 18px;
-  padding: 25px;
-  text-align: center;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  color: white;
 }
 
 #appointments h2.heading {
@@ -133,100 +33,12 @@ p.bodytxt {
   margin-bottom: 30px !important;
 }
 
-.btn-outline {
-  background: #1a9d9e;
-  border: 2px solid #000000;
-  border-radius: 30px;
-  color: #ffffff;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.btn-text {
-  font-family: "Montserrat Bold", sans-serif;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-  background: #138485;
-  color: #ffffff;
-  border-color: #2d2d2d;
-}
-
-
-#mainNavBar {
-  background-color: #f5f5f5;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: none;
-  display: flex;
-  justify-content: space-between;
+#get-in-touch h2.heading {
+  margin: auto;
+  margin-top: 20px !important;
+  margin-bottom: 0px !important;
+  padding-bottom: 20px !important;
   text-align: center;
-}
-
-#mainNavBar .navbar-nav {
-  margin-left: auto;
-}
-
-#mainNavBar .navbar-nav .nav-item .nav-link {
-  font-size: 100%;
-  font-weight: 600;
-  padding: 0.8em 0;
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
-  color: #2d2d2d;
-  font-family: "Montserrat", sans-serif;
-}
-
-#mainNavBar .navbar-nav .nav-item.btn-nav {
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-#mainNavBar .navbar-brand {
-  padding: 1.5em;
-}
-
-
-#mainNavBar .ham-menu {
-  width: 80px;
-  padding: 1em;
-  margin-right: 20px;
-}
-
-#mainNavBar .navbar-nav .nav-item .nav-link.active,
-#mainNavBar .navbar-nav .nav-item .nav-link:hover {
-  color: #1a9d9e;
-}
-
-#mainNavBar .navbar-brand {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 240px;
-  padding: 0.8em;
-  background: transparent;
-}
-
-#mainNavBar.navbar-shrink {
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #fdfdfd;
-  font-size: 0.9em;
-}
-
-#mainNavBar.navbar-shrink .navbar-brand {
-  width: 180px;
-  padding-left: 1.5em;
 }
 
 #hero {
@@ -321,7 +133,7 @@ p.bodytxt {
 #genetic-testing .icon-holder .testing-icon {
   max-width: 120px;
   max-height: 120px;
-  display: block; 
+  display: block;
 }
 
 #genetic-testing .card-body {
@@ -368,7 +180,7 @@ p.bodytxt {
   text-align: center;
   font-size: 34px;
   font-weight: 700;
-  color :white;
+  color: white;
   padding-top: 1.2em;
   padding-bottom: 0.8em;
 }
@@ -397,128 +209,96 @@ p.bodytxt {
   margin: auto;
 }
 
+#get-in-touch .row .line-break {
+  background-color: #1a9d9e;
+  margin: auto;
+  height: 5px;
+  width: 70%;
+}
 
+#get-in-touch .row .line-break.long {
+  width: 100%;
+  margin-bottom: 40px;
+}
 
+#get-in-touch .forms .row {
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 8%;
+  width: auto;
+  margin: auto;
+}
 
+#get-in-touch .forms .row.form-group {
+  padding-top: 40px !important;
+}
 
+#get-in-touch .forms .row .col-md-8 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#get-in-touch .forms .row .col-md-12.message {
+  border-bottom: none !important;
+  padding-top: 20px;
+  padding-left: 0px;
+  width: 100%;
+}
+
+#enter-name,
+#enter-email,
+#enter-phone,
+#enter-message {
+  background: transparent;
+  border: none;
+}
+
+#enter-message {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#get-in-touch .row .btn-outline {
+  margin: auto;
+}
+
+#get-in-touch .icon-small {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+}
+
+#get-in-touch .row.contact {
+  padding-left: 0px !important;
+  padding-top: 0px !important;
+  padding-right: 0px !important;
+}
+
+#get-in-touch .row.contact .col-md-8 {
+  border-bottom: 0px !important;
+}
+
+#get-in-touch p.bodytxt {
+  color: #2d2d2d;
+  padding-top: 15px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
 
 @media only screen and (min-width: 1800px) {
-  .container {
-    max-width: 75% !important;
-  }
-
   #hero .herobox {
     margin-top: 6% !important;
   }
 
-  .green-container .row {
-    width: 75% !important;
-    margin: auto;
-  }
-
-  .grey-container .row {
-    width: 75% !important;
-    margin: auto;
-  }
-  
-
   #genetic-testing .card-body {
     min-height: 550px !important;
-  }
-
-
-}
-
-@media only screen and (min-width: 1400px) {
-  .container {
-    max-width: 80%;
   }
 }
 
 @media only screen and (min-width: 1100px) {
-  .container {
-    max-width: 95%;
-  }
-
-  .green-container .row {
-    width: 90%;
-    margin: auto;
-  }
-
-
-  #mainNavBar {
-    background-color: transparent;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-  }
-
-  nav ul {
-    position: inherit;
-    width: auto;
-    background: none;
-    height: auto;
-    display: flex;
-    padding-top: 0;
-  }
-
-  h2.heading {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: left;
-  }
-
-  h3.subheading {
-    text-align: left;
-  }
-
-  p.bodytxt {
-    text-align: left;
-  }
-
-  #mainNavBar .navbar-brand {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 260px;
-    padding: 1em;
-    background: transparent;
-  }
-
-  #mainNavBar .navbar-nav .nav-item .nav-link {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    margin-top: 1.1em;
-    padding: 1.5em 1.2em !important;
-    height: 20px;
-  }
-
-  #mainNavBar .navbar-nav .nav-item.btn-nav {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  #mainNavBar .navbar-nav .nav-item .nav-link.btn-outline {
-    margin-top: 1.8em;
-    margin-left: 0.5em;
-    height: auto !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
-
-
-  #mainNavBar.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #fdfdfd;
-    font-size: 0.9em;
-    height: 120px;
-    padding: 5px 0;
-  }
-
-  #mainNavBar.navbar-shrink .navbar-brand {
-    width: 220px;
+  .blue-container {
+    width: 50%;
   }
 
   #hero {
@@ -552,7 +332,7 @@ p.bodytxt {
   }
 
   #hero .welcome .btn-outline {
-    float : left;
+    float: left;
   }
 
   #hero .welcome .tagline {
@@ -567,7 +347,6 @@ p.bodytxt {
     text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
   }
 
-
   #genetic-testing .card-body {
     min-height: 625px;
   }
@@ -575,11 +354,25 @@ p.bodytxt {
   #team .row.team-box .person-name {
     text-align: left;
   }
-    
+
   #team .read-more-btn {
     display: block;
     margin: 0;
   }
 
+  #get-in-touch .row .btn-outline {
+    margin: 0px !important;
+  }
 
+  #get-in-touch .row .line-break {
+    width: 50%;
+  }
+
+  #get-in-touch .row.contact {
+    width: 90%;
+  }
+
+  #get-in-touch .icon-small {
+    margin-right: auto;
+  }
 }
