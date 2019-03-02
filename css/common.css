@@ -154,6 +154,10 @@ p.bodytxt {
   margin-right: 25%;
 }
 
+#mainNavBar .navbar-nav {
+    padding-bottom: 5px !important;
+}
+
 #mainNavBar .navbar-brand {
   padding: 1.5em;
 }
@@ -204,6 +208,7 @@ footer .col-md {
 }
 
 footer h3.subheading {
+    padding-top: 20px;
   color: white;
 }
 
@@ -311,11 +316,11 @@ footer p.bodytxt {
   }
 
   #mainNavBar.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-color: #fdfdfd;
     font-size: 0.9em;
-    height: 120px;
+    height: 115px;
     padding: 5px 0;
   }
 
