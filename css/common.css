@@ -188,7 +188,7 @@ p.bodytxt {
 
 #hero {
   color: #ffffff;
-  height: 90%;
+  height: 95%;
   background-image: url("../images/beach_photo.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -203,7 +203,7 @@ p.bodytxt {
 #hero:before {
   content: "";
   position: absolute;
-  height: 90%;
+  height: 95%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -216,7 +216,7 @@ p.bodytxt {
   width: 90%;
   z-index: 1;
   margin: auto;
-  padding-top: 60%;
+  padding-top: 55%;
 }
 
 #hero .herobox .tagline {

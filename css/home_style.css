@@ -233,6 +233,9 @@ a:hover {
 
 #get-in-touch p.bodytxt {
   color: #2d2d2d;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 12px;
 }
 
 @media only screen and (min-width: 1800px) {
