@@ -42,6 +42,11 @@ ul {
   padding-bottom: 15px;
 }
 
+.green-container .row {
+  width: 90%;
+  margin: auto;
+}
+
 .grey-container {
   width: 100%;
   background: #f5f5f5;
@@ -130,13 +135,11 @@ p.bodytxt {
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
-  display: flex;
-  justify-content: space-between;
   text-align: center;
 }
 
 #mainNavBar .navbar-nav {
-  margin-left: auto;
+  padding-bottom: 5px !important;
 }
 
 #mainNavBar .navbar-nav .nav-item .nav-link {
@@ -149,37 +152,16 @@ p.bodytxt {
   font-family: "Montserrat", sans-serif;
 }
 
-#mainNavBar .navbar-nav .nav-item.btn-nav {
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-#mainNavBar .navbar-nav {
-    padding-bottom: 5px !important;
-}
-
-#mainNavBar .navbar-brand {
-  padding: 1.5em;
-}
-
 #mainNavBar .ham-menu {
   width: 80px;
-  padding: 1em;
-  margin-right: 20px;
+  padding: 0.8em;
+  margin-right: 1em;
+  margin-left: auto;
 }
 
 #mainNavBar .navbar-nav .nav-item .nav-link.active,
 #mainNavBar .navbar-nav .nav-item .nav-link:hover {
   color: #1a9d9e;
-}
-
-#mainNavBar .navbar-brand {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 240px;
-  padding: 0.8em;
-  background: transparent;
 }
 
 #mainNavBar.navbar-shrink {
@@ -189,9 +171,71 @@ p.bodytxt {
   font-size: 0.9em;
 }
 
+#mainNavBar .navbar-brand {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 280px;
+  padding: 1.2em;
+  margin-top: 0.5em;
+  margin-right: 0em;
+}
+
 #mainNavBar.navbar-shrink .navbar-brand {
-  width: 180px;
+  width: 240px;
   padding-left: 1.5em;
+}
+
+#hero {
+  color: #ffffff;
+  height: 90%;
+  background-image: url("../images/beach_photo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+}
+
+#hero:before {
+  content: "";
+  position: absolute;
+  height: 90%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color : rgba(45, 45, 45, 0.6);
+  z-index: 0;
+}
+
+#hero .herobox {
+  width: 90%;
+  z-index: 1;
+  margin: auto;
+  padding-top: 45%;
+}
+
+#hero .herobox .tagline {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.3em;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 0px;
+  z-index: 1;
+}
+
+#hero .herobox .btn-outline {
+  margin-top: 40px;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 footer {
@@ -202,9 +246,6 @@ footer .green-container {
   padding-top: 20px;
   height: auto;
   padding-bottom: 40px !important;
-}
-
-footer .col-md {
 }
 
 footer h3.subheading {
@@ -244,14 +285,9 @@ footer p.bodytxt {
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1200px) {
   .container {
     max-width: 95%;
-  }
-
-  .green-container .row {
-    width: 90%;
-    margin: auto;
   }
 
   #mainNavBar {
@@ -284,13 +320,8 @@ footer p.bodytxt {
     text-align: left;
   }
 
-  #mainNavBar .navbar-brand {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 260px;
-    padding: 1em;
-    background: transparent;
+  #mainNavBar .navbar-nav {
+    margin-left: auto;
   }
 
   #mainNavBar .navbar-nav .nav-item .nav-link {
@@ -299,12 +330,8 @@ footer p.bodytxt {
     transition: all 0.3s;
     margin-top: 1.1em;
     padding: 1.5em 1.2em !important;
-    height: 20px;
-  }
-
-  #mainNavBar .navbar-nav .nav-item.btn-nav {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   #mainNavBar .navbar-nav .nav-item .nav-link.btn-outline {
@@ -315,16 +342,41 @@ footer p.bodytxt {
     padding-bottom: 10px !important;
   }
 
-  #mainNavBar.navbar-shrink {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-color: #fdfdfd;
-    font-size: 0.9em;
-    height: 115px;
-    padding: 5px 0;
+  #mainNavBar .navbar-brand {
+    width: 280px;
   }
 
-  #mainNavBar.navbar-shrink .navbar-brand {
-    width: 220px;
+  #hero {
+    height: 95%;
+    background-image: url("../images/beach_photo_crop_3.jpg")
+  }
+
+  #hero:before {
+    height: 95%;
+    background-color : rgba(45, 45, 45, 0.1);
+  }
+
+  #hero .herobox {
+    height: 50%;
+    margin: 0;
+    position: left;
+    margin-left: 8%;
+    width: 500px;
+    padding-top: 20%;
+  }
+
+  #hero .herobox .tagline {
+    color: #2d2d2d;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 40px;
+    font-weight: 700px;
+    line-height: 1.5em;
+  }
+
+  #hero .herobox .btn-outline {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }

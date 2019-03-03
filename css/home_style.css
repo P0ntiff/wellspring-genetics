@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 
 .blue-container {
-  width: 80%;
+  width: 95%;
   margin: auto;
   margin-top: 80px;
   background-color: rgba(203, 226, 216, 0.83);
@@ -41,57 +41,7 @@ a:hover {
   text-align: center;
 }
 
-#hero {
-  color: #ffffff;
-  height: 80%;
-  background-image: url("../images/beach_photo.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#hero:before {
-  content: "";
-  position: absolute;
-  height: 80%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom, #2d2d2d, #2d2d2d);
-  opacity: 0.6;
-  z-index: 0;
-}
-
-#hero .herobox {
-  margin: auto;
-  width: 90%;
-  z-index: 1;
-}
-
-#hero .herobox .welcome {
-  margin: auto;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-#hero .welcome .tagline {
-  font-size: 50px;
-  font-weight: 700px;
-  line-height: 1.3em;
-  padding: 0px;
-  margin-bottom: 40px;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 0px;
-}
-
-#hero .welcome .tagline .improve {
+#hero .herobox .tagline .improve {
   color: #1a9d9e;
   font-size: 55px;
   font-weight: 700;
@@ -161,6 +111,8 @@ a:hover {
 #team .row.team-box {
   background-color: #1a9d9e;
   margin: auto;
+  padding-left: 2%;
+  padding-right: 2%;
   border-radius: 15px;
   padding-bottom: 50px;
   margin-bottom: 50px;
@@ -172,7 +124,7 @@ a:hover {
   width: 200px;
   display: block;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 20%;
 }
 
 #team .row.team-box .person-name {
@@ -270,9 +222,9 @@ a:hover {
 }
 
 #get-in-touch .row.contact {
-  padding-left: 0px !important;
   padding-top: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 #get-in-touch .row.contact .col-md-8 {
@@ -281,16 +233,9 @@ a:hover {
 
 #get-in-touch p.bodytxt {
   color: #2d2d2d;
-  padding-top: 15px;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
 }
 
 @media only screen and (min-width: 1800px) {
-  #hero .herobox {
-    margin-top: 6% !important;
-  }
-
   #genetic-testing .card-body {
     min-height: 550px !important;
   }
@@ -301,54 +246,36 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 992px) {
   .blue-container {
-    width: 50%;
+    width: 70%;
+  }
+  
+  #get-in-touch .row.contact .col-md-8 p.bodytxt {
+    text-align: left !important;
+
+  }
+
+  #team .team-member {
+    margin-top: 40%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .blue-container {
+    width: 60%;
   }
 
   #hero {
-    height: 95%;
     background-image: url("../images/beach_photo_crop_3.jpg");
-    text-align: left;
   }
 
-  #hero:before {
-    height: 95%;
-    opacity: 0.1;
-  }
-
-  #hero .herobox {
-    height: 50%;
-    margin: 0;
-    position: left;
-    margin-top: 2%;
-    margin-left: 8%;
-    width: 500px;
-    text-align: left;
-  }
-
-  #hero .welcome {
-    position: left;
-    text-align: left;
-    padding-top: 150px;
-    font-size: 40px;
-    font-weight: 700px;
-    line-height: 1.5em;
-  }
-
-  #hero .welcome .btn-outline {
+  #hero .herobox .btn-outline {
     float: left;
   }
 
-  #hero .welcome .tagline {
-    color: #2d2d2d;
-    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
-    text-align: left;
-    font-weight: 400;
-    font-size: 40px;
-  }
-
-  #hero .welcome .tagline .improve {
+  #hero .herobox .tagline .improve {
     text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
   }
 
@@ -375,6 +302,8 @@ a:hover {
 
   #get-in-touch .row.contact {
     width: 90%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   #get-in-touch .icon-small {
