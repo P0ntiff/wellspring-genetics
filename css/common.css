@@ -208,7 +208,7 @@ p.bodytxt {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color : rgba(45, 45, 45, 0.6);
+  background-color: rgba(45, 45, 45, 0.6);
   z-index: 0;
 }
 
@@ -216,7 +216,7 @@ p.bodytxt {
   width: 90%;
   z-index: 1;
   margin: auto;
-  padding-top: 45%;
+  padding-top: 60%;
 }
 
 #hero .herobox .tagline {
@@ -235,7 +235,6 @@ p.bodytxt {
   z-index: 1;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 footer {
@@ -249,7 +248,7 @@ footer .green-container {
 }
 
 footer h3.subheading {
-    padding-top: 20px;
+  padding-top: 20px;
   color: white;
 }
 
@@ -282,6 +281,12 @@ footer p.bodytxt {
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 80%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #hero .herobox {
+    padding-top: 45%;
   }
 }
 
@@ -348,12 +353,12 @@ footer p.bodytxt {
 
   #hero {
     height: 95%;
-    background-image: url("../images/beach_photo_crop_3.jpg")
+    background-image: url("../images/beach_photo_crop_3.jpg");
   }
 
   #hero:before {
     height: 95%;
-    background-color : rgba(45, 45, 45, 0.1);
+    background-color: rgba(45, 45, 45, 0.1);
   }
 
   #hero .herobox {
