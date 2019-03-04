@@ -19,13 +19,11 @@ function readMore() {
   }
 }
 
-
-
-$(function(){
-  $('.dropdown-toggle').click(
-    function(){
-      if ($(this).next().is(':visible')) {
-        location.href = $(this).attr('href');;
-      }
-     });
-  });
+//$(function(){
+//  $('.dropdown-toggle').click(
+//    function(){
+//      if ($(this).next().is(':visible')) {
+//        location.href = $(this).attr('href');;
+//      }
+//     });
+//  });
