@@ -9,6 +9,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -29,6 +36,10 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+li.dropdown:hover > .dropdown-menu {
+  display: block;
 }
 
 .container {
@@ -186,59 +197,12 @@ p.bodytxt {
   padding-left: 1.5em;
 }
 
-#hero {
-  color: #ffffff;
-  height: 95%;
-  background-image: url("../images/beach_photo.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: -1;
-}
-
-#hero:before {
-  content: "";
-  position: absolute;
-  height: 95%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(45, 45, 45, 0.6);
-  z-index: 0;
-}
-
-#hero .herobox {
-  width: 90%;
-  z-index: 1;
-  margin: auto;
-  padding-top: 55%;
-}
-
-#hero .herobox .tagline {
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 1.3em;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 0px;
-  z-index: 1;
-}
-
-#hero .herobox .btn-outline {
-  margin-top: 40px;
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
+#mainNavBar .btn-outline {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 footer {
-  margin-top: 10%;
 }
 
 footer .green-container {
@@ -264,7 +228,7 @@ footer p.bodytxt {
 
 @media only screen and (min-width: 1800px) {
   .container {
-    max-width: 75% !important;
+    max-width: 60% !important;
   }
 
   .green-container .row {
@@ -281,12 +245,6 @@ footer p.bodytxt {
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 80%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  #hero .herobox {
-    padding-top: 45%;
   }
 }
 
@@ -351,37 +309,8 @@ footer p.bodytxt {
     width: 280px;
   }
 
-  #hero {
-    height: 95%;
-    background-image: url("../images/beach_photo_crop_3.jpg");
-  }
-
-  #hero:before {
-    height: 95%;
-    background-color: rgba(45, 45, 45, 0.1);
-  }
-
-  #hero .herobox {
-    height: 50%;
-    margin: 0;
-    position: left;
-    margin-left: 8%;
-    width: 500px;
-    padding-top: 20%;
-  }
-
-  #hero .herobox .tagline {
-    color: #2d2d2d;
-    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
-    text-align: left;
-    font-weight: 400;
-    font-size: 40px;
-    font-weight: 700px;
-    line-height: 1.5em;
-  }
-
-  #hero .herobox .btn-outline {
-    margin-left: 0px;
-    margin-right: 0px;
+  #mainNavBar .btn-outline {
+    margin-left: 0.5em;
+    margin-right: 0;
   }
 }

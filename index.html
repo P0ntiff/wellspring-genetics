@@ -66,8 +66,35 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="appointments.html">Appointments</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="appointments.html"
+                role="button"
+                aria-haspopup="true"
+                >Appointments</a
+              >
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item"
+                  href="appointments.html#who_should_attend"
+                  >Who Should Attend?</a
+                >
+                <a class="dropdown-item" href="appointments.html#whats_involved"
+                  >What's Involved?</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="appointments.html#genetic_testing"
+                  >Genetic Testing</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="appointments.html#freq_asked_questions"
+                  >FAQ</a
+                >
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="news.html">News</a>
@@ -76,7 +103,9 @@
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item btn-nav">
-              <a class="nav-link btn btn-outline" href="https://widget2.appointuit.com/prac_42098"
+              <a
+                class="nav-link btn btn-outline"
+                href="https://widget2.appointuit.com/prac_42098"
                 ><span class="btn-text text-uppercase"> Book Online</span></a
               >
             </li>
@@ -89,14 +118,17 @@
       <div class="container">
         <div class="herobox">
           <div class="row">
-              <div class="tagline">
-                <span class="improve">Improve</span> your health with genetic
-                counselling and testing
-              </div>
+            <div class="tagline">
+              <span class="improve">Improve</span> your health with genetic
+              counselling and testing
+            </div>
           </div>
           <div class="row">
-              <a class="btn btn-outline" href="https://widget2.appointuit.com/prac_42098"
-                ><span class="btn-text">Make An Appointment</span></a>
+            <a
+              class="btn btn-outline"
+              href="https://widget2.appointuit.com/prac_42098"
+              ><span class="btn-text">Make An Appointment</span></a
+            >
           </div>
         </div>
       </div>
@@ -106,6 +138,7 @@
       <div class="green-container w-90">
         <div class="row">
           <div class="col-lg-12">
+            <a class="anchor" id="what_do_we_offer"></a>
             <h2 class="heading">What do we offer?</h2>
           </div>
         </div>
@@ -136,7 +169,9 @@
         <div class="row appt-cell">
           <div class="col-xl-6"></div>
           <div class="col-xl-6 text-center">
-            <a class="btn btn-xl btn-outline" href="#"
+            <a
+              class="btn btn-xl btn-outline"
+              href="appointments.html#pre_natal_appointment"
               ><span class="btn-text">Learn More</span></a
             >
           </div>
@@ -165,7 +200,9 @@
         <div class="row appt-cell">
           <div class="col-xl-6"></div>
           <div class="col-xl-6 text-center">
-            <a class="btn btn-outline" href="#"
+            <a
+              class="btn btn-outline"
+              href="appointments.html#well_adult_appointment"
               ><span class="btn-text">Learn More</span></a
             >
           </div>
@@ -177,6 +214,7 @@
       <div class="grey-container">
         <div class="row">
           <div class="col-lg-12 text-left">
+            <a class="anchor" id="genetic_testing"></a>
             <h2 class="heading">Genetic Testing</h2>
           </div>
         </div>
@@ -270,6 +308,7 @@
       <div class="grey-container">
         <div class="row">
           <div class="col-lg-12 text-left">
+            <a class="anchor" id="our_team"></a>
             <h2 class="heading">Our Team</h2>
           </div>
         </div>
@@ -304,13 +343,18 @@
               <span id="more"
                 ><br />
                 Dr Gattas returned to Brisbane in 1996 and has worked for over
-                20 years in public hospital practice at <a href="https://www.health.qld.gov.au/ghq" class="link">Genetic Health Qld</a>.
-                He started his private practice at <a href="https://brisbanegenetics.com.au/" class="link">Brisbane Genetics</a> in 2004.
-                He has a broad experience in all aspects of genetics, including cancer genetics, chromosome
-                abnormalities, paediatric genetics, IVF and preimplantation
-                genetic diagnosis (PGD). He was an author of one of the earliest
-                papers on the use of video-consultation for clinical genetics
-                practice in 2001.
+                20 years in public hospital practice at
+                <a href="https://www.health.qld.gov.au/ghq" class="link"
+                  >Genetic Health Qld</a
+                >. He started his private practice at
+                <a href="https://brisbanegenetics.com.au/" class="link"
+                  >Brisbane Genetics</a
+                >
+                in 2004. He has a broad experience in all aspects of genetics,
+                including cancer genetics, chromosome abnormalities, paediatric
+                genetics, IVF and preimplantation genetic diagnosis (PGD). He
+                was an author of one of the earliest papers on the use of
+                video-consultation for clinical genetics practice in 2001.
               </span>
             </p>
             <div>
@@ -344,6 +388,7 @@
       <div class="blue-container">
         <div class="row">
           <div class="col-md-12">
+            <a class="anchor" id="get_in_touch"></a>
             <h2 class="heading">Get In Touch</h2>
           </div>
         </div>
@@ -416,7 +461,7 @@
               </div>
               <div class="col-md-8">
                 <p class="bodytxt">
-                  07 3356 3896
+                  <a href="tel:0733563896" class="link-contact">07 3356 3896</a>
                 </p>
               </div>
             </div>
@@ -431,7 +476,11 @@
               </div>
               <div class="col-md-8">
                 <p class="bodytxt">
-                  email@wellspringgenetics.com.au
+                  <a
+                    href="mailto:email@wellspringgenetics.com.au"
+                    class="link-contact"
+                    >email@wellspringgenetics.com.au</a
+                  >
                 </p>
               </div>
             </div>
@@ -446,10 +495,15 @@
               </div>
               <div class="col-md-8">
                 <p class="bodytxt">
-                  Nicholson Street Specialist Centre <br />
-                  Suite 107, Level 7 <br />
-                  69-83 Nicholson Street <br />
-                  Greenslopes QLD 4120 <br />
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=75+Nicholson+Street+Greenslopes"
+                    class="link-contact"
+                  >
+                    Nicholson Street Specialist Centre <br />
+                    Suite 107, Level 7 <br />
+                    69-83 Nicholson Street <br />
+                    Greenslopes QLD 4120 <br />
+                  </a>
                 </p>
               </div>
             </div>
@@ -462,38 +516,57 @@
       <div class="green-container w-100">
         <div class="row">
           <div class="col-md">
-              <h3 class="subheading">
-                Home
-              </h3>
-              <p class="bodytxt">
-                <a href="#" class="link">What Do We Offer</a> <br />
-                <a href="#" class="link">Genetic Testing</a> <br />
-                <a href="#" class="link">Our Team</a> <br />
-                <a href="#" class="link">Get In Touch</a> <br />
-              </p>
-            </div>
-
+            <h3 class="subheading">
+              Home
+            </h3>
+            <p class="bodytxt">
+              <a href="index.html#what_do_we_offer" class="link"
+                >What Do We Offer</a
+              >
+              <br />
+              <a href="index.html#genetic_testing" class="link"
+                >Genetic Testing</a
+              >
+              <br />
+              <a href="index.html#our_team" class="link">Our Team</a> <br />
+              <a href="index.html#get_in_touch" class="link">Get In Touch</a>
+              <br />
+            </p>
+          </div>
 
           <div class="col-md">
             <h3 class="subheading">
               Appointments
             </h3>
             <p class="bodytxt">
-              <a href="#" class="link">Genetic Counselling</a> <br />
-              <a href="#" class="link">Genetic Testing</a> <br />
-              <a href="#" class="link">FAQ</a> <br />
-              <a href="#" class="link">Referral Form</a> <br />
+              <a href="appointments.html#who_should_attend" class="link"
+                >Who Should Attend?</a
+              >
+              <br />
+              <a href="appointments.html#whats_involved" class="link"
+                >What's Involved?</a
+              >
+              <br />
+              <a href="appointments.html#genetic_testing" class="link"
+                >Genetic Testing</a
+              >
+              <br />
+              <a href="appointments.html#freq_asked_questions" class="link"
+                >FAQ</a
+              >
+              <br />
             </p>
           </div>
-
 
           <div class="col-md">
             <h3 class="subheading">
               Contact
             </h3>
             <p class="bodytxt">
-              <a href="#" class="link">07 3356 3896</a> <br />
-              <a href="#" class="link">email@wellspringgenetics.com.au</a>
+              <a href="tel:0733563896" class="link">07 3356 3896</a> <br />
+              <a href="mailto:email@wellspringgenetics.com.au" class="link"
+                >email@wellspringgenetics.com.au</a
+              >
               <br />
               <a href="https://brisbanegenetics.com.au" class="link"
                 >Brisbane Genetics Wesbite</a
@@ -507,10 +580,15 @@
               Location
             </h3>
             <p class="bodytxt">
-              Nicholson Street Specialist Centre <br />
-              Suite 107, Level 7 <br />
-              69-83 Nicholson Street <br />
-              Greenslopes QLD 4120 <br />
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=75+Nicholson+Street+Greenslopes"
+                class="link"
+              >
+                Nicholson Street Specialist Centre <br />
+                Suite 107, Level 7 <br />
+                69-83 Nicholson Street <br />
+                Greenslopes QLD 4120 <br />
+              </a>
             </p>
           </div>
         </div>

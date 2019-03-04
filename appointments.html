@@ -6,7 +6,7 @@
 
     <meta
       name="viewport"
-      content="width-device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
@@ -17,8 +17,8 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/page_style.css" />
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/page_style.css" />
 
     <!-- Bootstrap scripts-->
     <script
@@ -43,134 +43,403 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavBar">
-      <div class="container">
-        <img
-          src="images/wellspring_logo.png"
-          alt="Wellspring Genetics"
-          class="navbar-brand js-scroll-trigger"
-        />
-        <button
-          class="navbar-toggler navbar-toggler-right ham-menu"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <img src="images/hamburger.svg" alt="Menu" id="hamburger" />
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="appointments.html">Appointments</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item btn-nav">
-              <a
-                class="nav-link btn btn-outline"
-                href="https://widget2.appointuit.com/prac_42098"
-                ><span class="btn-text text-uppercase"> Book Online</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNavBar">
+          <div class="container">
+            <img
+              src="images/wellspring_logo.png"
+              alt="Wellspring Genetics"
+              class="navbar-brand js-scroll-trigger"
+            />
+            <button
+              class="navbar-toggler navbar-toggler-right ham-menu"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <img src="images/hamburger.svg" alt="Menu" id="hamburger" />
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="appointments.html"
+                    role="button"
+                    aria-haspopup="true"
+                    >Appointments</a
+                  >
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="appointments.html#who_should_attend">Who Should Attend?</a>
+                    <a class="dropdown-item" href="appointments.html#whats_involved">What's Involved?</a>
+                    <a class="dropdown-item" href="appointments.html#genetic_testing">Genetic Testing</a>
+                    <a class="dropdown-item" href="appointments.html#freq_asked_questions">FAQ</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item btn-nav">
+                  <a
+                    class="nav-link btn btn-outline"
+                    href="https://widget2.appointuit.com/prac_42098"
+                    ><span class="btn-text text-uppercase"> Book Online</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
 
-    <section id="hero">
+    <section id="hero" class="appts">
       <div class="container">
-        <div class="row">
-          <div class="herobox">
-            <div class="welcome">
-              <div class="tagline">
-                 Appointments
-              </div>
-
+        <div class="herobox">
+          <div class="row">
+            <div class="tagline">
+              Appointments
             </div>
           </div>
         </div>
       </div>
     </section>
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-      <div class="green-container">
+    <section id="whoshouldattend" class="bg-green">
+      <div class="container">
         <div class="row">
-          <div class="col-md">
+          <div class="col-lg-12">
+            <a class="anchor" id="who_should_attend"></a>
+            <h2 class="heading">Who should attend?</h2>
+          </div>
+        </div>
+        <div class="row flex-column-reverse flex-xl-row">
+          <div class="col-xl-8">
             <h3 class="subheading">
-              Appointments
+              <a class="anchor" id="pre_natal_appointment"></a>
+              Prenatal or pre-pregnancy appointment
             </h3>
             <p class="bodytxt">
-              <a href="#" class="link">Genetic Counselling</a> <br />
-              <a href="#" class="link">Genetic Testing</a> <br />
-              <a href="#" class="link">FAQ</a> <br />
-              <a href="#" class="link">Referral Form</a> <br />
+              This appointment is for couples and single patients interested in
+              gene testing to decrease their chance of having a child with a
+              serious health problem.
+              <br /><br />
+              Approximately 1 in 300 couples will have a child with cystic
+              fibrosis, spinal muscular atrophy, fragile X syndrome or an
+              autosomal recessive disorder that could have been detected in
+              advance.
+              <br /><br />
+              80% of these couples have NO family history of the condition. If
+              none of these problems have happened before in your family, this
+              does NOT mean that it could not happen to you.
+              <br /><br />
+              Knowing you are a carrier allows you to have other options that
+              include testing in a pregnancy (called pre-natal diagnosis), or
+              using IVF and pre-implantation genetic diagnosis (PGD) to avoid
+              having a child with a serious medical problem.
+              <br /><br />
+              Pre-pregnancy carrier testing is only needed once, and the
+              information will benefit this couple for every subsequent
+              pregnancy with the same partner.
             </p>
           </div>
-
-          <div class="col-md">
-            <h3 class="subheading">
-              News
-            </h3>
-            <p class="bodytxt">
-              <a href="#" class="link">Latest Posts</a> <br />
-            </p>
+          <div class="col-xl-4">
+            <img
+              class="img-fluid wellspring-icon"
+              alt="prenatal"
+              src="images/baby_green.svg"
+            />
           </div>
-
-          <div class="col-md">
-            <h3 class="subheading">
-              Contact
-            </h3>
-            <p class="bodytxt">
-              <a href="#" class="link">07 3356 3896</a> <br />
-              <a href="#" class="link">email@wellspringgenetics.com.au</a>
-              <br />
-              <a href="https://www.brisbanegenetics.com.au" class="link"
-                >Brisbane Genetics Wesbite</a
-              >
-              <br />
-            </p>
+        </div>
+        <div class="row">
+          <div class="col-xl-4">
+            <img
+              class="img-fluid wellspring-icon"
+              alt="prenatal"
+              src="images/pedigree_green.svg"
+            />
           </div>
-
-          <div class="col-md">
+          <div class="col-xl-8">
             <h3 class="subheading">
-              Location
+              <a class="anchor" id="well_adult_appointment"></a>
+              Well adult appointment
             </h3>
             <p class="bodytxt">
-              Nicholson Street Specialist Centre <br />
-              Suite 107, Level 7 <br />
-              69-83 Nicholson Street <br />
-              Greenslopes QLD 4120 <br />
+              This appointment is for healthy adults interested in a gene test
+              that may predict a future health problem.
+              <br /><br />
+              The cost of gene testing some important genes such as BRCA1 and
+              BRCA2 is now a few hundred dollars. Even with no Medicare or
+              private insurance rebate, gene testing has become very affordable.
+              <br /><br />
+              People who like to be pro-active with their health should see
+              their General Practitioner for advice, but GPs and other doctors
+              find it hard to keep up with the rapid progress in molecular
+              genetic testing. This is the service provided by a Genetic
+              Counsellor who can inform you and your doctor about these tests.
             </p>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+
+    <section class="bg-green">
+      <div class="container">
+        <div class="row">
+          <div class="line-break"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="whatsinvolved" class="bg-green">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <a class="anchor" id="whats_involved"></a>
+            <h2 class="heading">What's Involved?</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="bodytxt">
+              When you meet the Genetic Counsellor, she will ask you about your
+              family history, draw a family tree, and ask about any current
+              medical problems. For a couple's appointment, the same history
+              will be collected from your partner.
+              <br /><br />
+              In preparation for the appointment, write down the medical history
+              for your parents, siblings, grandparents (on maternal and paternal
+              sides), uncles, aunts and all your cousins as best you can.
+              <br /><br />
+              Next will be an explanation about the test options for
+              pre-pregnancy or well adult testing. <br />
+              • What genes will be tested? <br />
+              • How are the tests are performed? <br />
+              • How long do results take? <br />
+              • What do the tests cost? <br />
+              • How will I get these results? <br />
+              • What do I do if I have an adverse result?
+              <br /><br />
+              A blood sample or saliva sample can be collected the same day.
+              <br /><br />
+              An email will be sent to you with a summary letter and your
+              results. This letter and results will also be sent to your
+              preferred doctor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bg-green">
+        <div class="container">
+          <div class="row">
+            <div class="line-break"></div>
+          </div>
+        </div>
+      </section>
+  
+
+      
+    <section id="genetictesting" class="bg-green">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <a class="anchor" id="genetic_testing"></a>
+              <h2 class="heading">Genetic Testing</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="bodytxt">
+                  Wellspring Genetics is independent of any pathology company.  It therefore can offer tests from a wide range of Australian and overseas medical laboratories.
+                  <br /><br />
+                  These laboratories include (in alphabetical order): <br /><br />
+                    <a class="link" href="https://www.color.com/"> Color </a> <br />
+                    <a class="link" href="https://www.invitae.com/en/"> Invitae </a> <br />
+                    <a class="link" href="https://genomicdiagnostics.com.au/"> QML via Genomic Diagnostics </a> <br />
+                    <a class="link" href="https://www.sonicgenetics.com.au/"> Sullivan Nicolaides via Sonic Genetics </a> <br />
+                    <a class="link" href="https://www.vcgs.org.au/"> VCGS Pathology </a> <br />
+                    <br />
+                  These laboratories are all certified by the relevant quality assurance authorities for medical testing.  This means the results are highly reliable.  Surprisingly this quality assurance safeguard is not mandatory for all DNA tests that are sold direct to the public in Australia.  
+                  <br /><br />
+                  The cost of gene testing varies from about $350 to $995 depending on the test requested. The most common tests cost about $400.
+                  <br /><br />
+                  This test cost is paid to the pathology laboratory, not to Wellspring Genetics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="bg-green">
+          <div class="container">
+            <div class="row">
+              <div class="line-break"></div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section id="faq" class="bg-green">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <a class="anchor" id="freq_asked_questions"></a>
+                  <h2 class="heading">Frequently Asked Questions</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p class="bodytxt">
+                      <strong>What is the cost of an appointment?</strong>
+                      <br /><br />
+
+                      A 30 minute appointment costs $150. A special introductory price for any couple for pre-pregnancy screening is $200.
+                      <br /><br /> 
+                      <br /> 
+                      <strong>What is the waiting time for an appointment?</strong>
+                      <br /><br />
+
+                      Currently within 7 days.
+                      <br /><br />
+                      <br /> 
+                      
+                      <strong>Does Medicare or private insurance pay for the appointment?</strong>
+                      <br /><br />
+
+                      There is no Medicare rebate for the appointment. Private health insurers in Australia usually do not pay for the appointment, but you should check with your insurer as health insurance policies are changing. 
+                      <br /><br />                   
+                      Visitors from overseas may have medical insurance policies that will cover the cost of the appointment.  They will need to check this with their insurance provider.
+                      
+                  </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <p class="bodytxt">
+                        <strong>Does Medicare or private insurance pay for pre-pregnancy or well adult gene testing?</strong>
+                        <br /><br />
+  
+                        No. The cost of gene testing varies from about $350 to $995 depending on the test requested. The most common tests cost about $400
+                        <br /><br />
+                        <br /> 
+                        <strong>Can I bring another family member?</strong>
+                        <br /><br />
+  
+                        Yes for couples testing or a pre-pregnancy appointment.  This will cost $200.
+                        <br /><br />
+
+                        Yes for a well adult appointment, but the second family member needs to book a consecutive time slot if they are planning to have testing for themselves.  This will cost the same price of $150.
+                        <br /><br />
+
+                        Three or more family members cannot be seen at the same time.
+                        <br /><br />
+                        <br /> 
+                        <strong>Do I need a referral?</strong>
+                        <br /><br />
+  
+                        No referral is needed for appointments at Wellspring Genetics.
+
+                        <br /><br />                   
+                        
+                    </p>
+                  </div>
+
+              </div>
+            </div>
+          </section>
+
+          <footer>
+              <div class="green-container w-100">
+                <div class="row">
+                  <div class="col-md">
+                    <h3 class="subheading">
+                      Home
+                    </h3>
+                    <p class="bodytxt">
+                      <a href="index.html#what_do_we_offer" class="link"
+                        >What Do We Offer</a
+                      >
+                      <br />
+                      <a href="index.html#genetic_testing" class="link"
+                        >Genetic Testing</a
+                      >
+                      <br />
+                      <a href="index.html#our_team" class="link">Our Team</a> <br />
+                      <a href="index.html#get_in_touch" class="link">Get In Touch</a>
+                      <br />
+                    </p>
+                  </div>
+        
+                  <div class="col-md">
+                    <h3 class="subheading">
+                      Appointments
+                    </h3>
+                    <p class="bodytxt">
+                      <a href="appointments.html#who_should_attend" class="link"
+                        >Who Should Attend?</a
+                      >
+                      <br />
+                      <a href="appointments.html#whats_involved" class="link"
+                        >What's Involved?</a
+                      >
+                      <br />
+                      <a href="appointments.html#genetic_testing" class="link"
+                        >Genetic Testing</a
+                      >
+                      <br />
+                      <a href="appointments.html#freq_asked_questions" class="link"
+                        >FAQ</a
+                      >
+                      <br />
+                    </p>
+                  </div>
+        
+                  <div class="col-md">
+                    <h3 class="subheading">
+                      Contact
+                    </h3>
+                    <p class="bodytxt">
+                      <a href="tel:0733563896" class="link">07 3356 3896</a> <br />
+                      <a href="mailto:email@wellspringgenetics.com.au" class="link"
+                        >email@wellspringgenetics.com.au</a
+                      >
+                      <br />
+                      <a href="https://brisbanegenetics.com.au" class="link"
+                        >Brisbane Genetics Wesbite</a
+                      >
+                      <br />
+                    </p>
+                  </div>
+        
+                  <div class="col-md">
+                    <h3 class="subheading">
+                      Location
+                    </h3>
+                    <p class="bodytxt">
+                        <a
+                        href="https://www.google.com/maps/search/?api=1&query=75+Nicholson+Street+Greenslopes"
+                        class="link"
+                      >
+                        Nicholson Street Specialist Centre <br />
+                        Suite 107, Level 7 <br />
+                        69-83 Nicholson Street <br />
+                        Greenslopes QLD 4120 <br />
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
   </body>
 </html>

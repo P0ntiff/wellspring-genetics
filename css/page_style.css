@@ -1,37 +1,197 @@
-
-
 #mainNavBar {
-    background-color: white !important;
+  background-color: white !important;
+}
+
+.bg-green {
+  background-color: rgba(26, 157, 157, 0.1) !important;
+}
+
+section a.link {
+  color: #1a9d9e;
+}
+
+h2.heading {
+  margin: auto;
+  text-align: center;
+}
+
+h3.subheading {
+  text-transform: uppercase;
+}
+
+p.bodytxt {
+  color: #2d2d2d;
+  font-size: 1em;
 }
 
 #hero {
-    background-image: url("../images/boy_and_mum.jpg") !important;
-    height: 70%;
+  color: #ffffff;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+}
+
+#hero.appts {
+  background-image: url("../images/boy_and_mum.jpg");
+}
+
+#hero.news {
+  background-image: url("../images/beach_sunset.jpg");
+}
+
+#hero.contact {
+  background-image: url("../images/ocean.jpg")
 }
 
 #hero:before {
-    height: 70%;
-    opacity: 0.5 !important;
+  content: "";
+  position: absolute;
+  height: 70%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(45, 45, 45, 0.6);
+  z-index: 0;
 }
 
+#hero .container {
+  position: relative;
+  height: 100%;
+}
 
 #hero .herobox {
-    margin-top: 20px !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  width: 90%;
+}
+
+#hero .herobox .tagline {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.3em;
+  text-align: center;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 0px;
+  z-index: 1;
+}
+
+.wellspring-icon {
+  display: block;
+  max-width: 150px;
+  max-height: 150px;
+  margin: auto;
+}
+
+.news-photo {
+  display: block;
+  padding-top: 10%;
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+}
+
+#whoshouldattend .container {
+  width: 95%;
+  padding-top: 20px;
+}
+
+.line-break {
+  background-color: #1a9d9e;
+  margin: auto;
+  height: 5px;
+  width: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.line-break.long {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#contactus {
+  padding-top: 50px;
 
 }
 
-#hero .welcome .tagline {
-    color: white !important;
+
+#contactus p.bodytxt {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-  
-@media only screen and (min-width: 1100px) {
+#map .map-embed {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100px;
 
 
 }
-
 
 
 @media only screen and (min-width: 1800px) {
 
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 70% !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 80% !important;
+  }
+
+  .wellspring-icon {
+    max-width: 250px;
+    max-height: 250px;
+    margin-top: 10%;
+  }
+
+  #whoshouldattend p.bodytxt {
+    padding-bottom: 50px !important;
+  }
+
+  #hero {
+    height: 70%;
+  }
+
+  #hero:before {
+    height: 70%;
+    background-color: rgba(45, 45, 45, 0.5);
+  }
+
+  #hero .herobox {
+    width: 500px;
+    transform: translateY(20%) !important;
+  }
+
+  #hero .herobox .tagline {
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 40px;
+    font-weight: 700px;
+    line-height: 1.5em;
+  }
 }

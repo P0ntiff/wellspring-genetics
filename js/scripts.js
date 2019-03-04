@@ -18,3 +18,14 @@ function readMore() {
     moreText.style.display = "inline";
   }
 }
+
+
+
+$(function(){
+  $('.dropdown-toggle').click(
+    function(){
+      if ($(this).next().is(':visible')) {
+        location.href = $(this).attr('href');;
+      }
+     });
+  });
