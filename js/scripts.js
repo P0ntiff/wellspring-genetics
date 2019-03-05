@@ -19,11 +19,41 @@ function readMore() {
   }
 }
 
-//$(function(){
-//  $('.dropdown-toggle').click(
-//    function(){
-//      if ($(this).next().is(':visible')) {
-//        location.href = $(this).attr('href');;
-//      }
-//     });
-//  });
+// $(function() {
+//   $(".dropdown-toggle").click(function() {
+//     if (
+//       $(this)
+//         .next()
+//         .is(":visible")
+//     ) {
+//       location.href = $(this).attr("href");
+//     }
+//   });
+// });
+
+jQuery(function($) {
+  if ($(window).width() > 769) {
+    $(".navbar .dropdown").hover(
+      function() {
+        $(this)
+          .find(".dropdown-menu")
+          .first()
+          .stop(true, true)
+          .delay(250)
+          .slideDown();
+      },
+      function() {
+        $(this)
+          .find(".dropdown-menu")
+          .first()
+          .stop(true, true)
+          .delay(100)
+          .slideUp();
+      }
+    );
+
+    $(".navbar .dropdown > a").click(function() {
+      location.href = this.href;
+    });
+  }
+});

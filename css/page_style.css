@@ -6,6 +6,11 @@
   background-color: rgba(26, 157, 157, 0.1) !important;
 }
 
+.content-container {
+  margin: auto;
+  width: 95%;
+}
+
 section a.link {
   color: #1a9d9e;
 }
@@ -46,7 +51,7 @@ p.bodytxt {
 }
 
 #hero.contact {
-  background-image: url("../images/ocean.jpg")
+  background-image: url("../images/ocean.jpg");
 }
 
 #hero:before {
@@ -100,8 +105,8 @@ p.bodytxt {
   margin: auto;
 }
 
-#whoshouldattend .container {
-  width: 95%;
+#whoshouldattend .content-container {
+  margin: auto;
   padding-top: 20px;
 }
 
@@ -119,46 +124,44 @@ p.bodytxt {
   margin-bottom: 40px;
 }
 
-#contactus {
-  padding-top: 50px;
+#contactus h3.subheading {
+  padding-bottom: 10px;
 
 }
 
+#contactus {
+  padding-top: 50px;
+}
 
 #contactus p.bodytxt {
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
+  text-align: center;
 }
 
-#map .map-embed {
-  margin: auto;
-  max-width: 100%;
-  max-height: 100px;
-
-
+#map {
+  padding-bottom: 50px;
 }
-
 
 @media only screen and (min-width: 1800px) {
-
 }
 
 @media only screen and (min-width: 1400px) {
-  .container {
-    width: 70% !important;
+  .content-container {
+    width: 60% !important;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .container {
+  .content-container {
     width: 85%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .container {
-    width: 80% !important;
+  .content-container {
+    width: 80%;
   }
 
   .wellspring-icon {

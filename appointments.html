@@ -43,63 +43,77 @@
   </head>
 
   <body>
-      <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNavBar">
-          <div class="container">
-            <img
-              src="images/wellspring_logo.png"
-              alt="Wellspring Genetics"
-              class="navbar-brand js-scroll-trigger"
-            />
-            <button
-              class="navbar-toggler navbar-toggler-right ham-menu"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarResponsive"
-              aria-controls="navbarResponsive"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <img src="images/hamburger.svg" alt="Menu" id="hamburger" />
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="appointments.html"
-                    role="button"
-                    aria-haspopup="true"
-                    >Appointments</a
-                  >
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="appointments.html#who_should_attend">Who Should Attend?</a>
-                    <a class="dropdown-item" href="appointments.html#whats_involved">What's Involved?</a>
-                    <a class="dropdown-item" href="appointments.html#genetic_testing">Genetic Testing</a>
-                    <a class="dropdown-item" href="appointments.html#freq_asked_questions">FAQ</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="news.html">News</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item btn-nav">
-                  <a
-                    class="nav-link btn btn-outline"
-                    href="https://widget2.appointuit.com/prac_42098"
-                    ><span class="btn-text text-uppercase"> Book Online</span></a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNavBar">
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="images/wellspring_logo.png"
+            alt="Wellspring Genetics"
+            class="navbar-brand js-scroll-trigger"
+        /></a>
+        <button
+          class="navbar-toggler navbar-toggler-right ham-menu"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="images/hamburger.svg" alt="Menu" id="hamburger" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="appointments.html"
+                role="button"
+                aria-haspopup="true"
+                >Appointments</a
+              >
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item"
+                  href="appointments.html#who_should_attend"
+                  >Who Should Attend?</a
+                >
+                <a class="dropdown-item" href="appointments.html#whats_involved"
+                  >What's Involved?</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="appointments.html#genetic_testing"
+                  >Genetic Testing</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="appointments.html#freq_asked_questions"
+                  >FAQ</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item btn-nav">
+              <a
+                class="nav-link btn btn-outline"
+                href="https://widget2.appointuit.com/prac_42098"
+                ><span class="btn-text text-uppercase"> Book Online</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <section id="hero" class="appts">
       <div class="container">
@@ -114,11 +128,23 @@
     </section>
 
     <section id="whoshouldattend" class="bg-green">
-      <div class="container">
+      <div class="content-container">
         <div class="row">
           <div class="col-lg-12">
             <a class="anchor" id="who_should_attend"></a>
             <h2 class="heading">Who should attend?</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="bodytxt">
+              <strong>NB: </strong> Patients who have an uncertain diagnosis or
+              a significant family history of a genetic condition will need a
+              referral to see Dr Michael Gattas for a medical assessment at
+              <a href="https://brisbanegenetics.com.au" class="link"
+                >Brisbane Genetics</a
+              >. For all other patients, please read below.
+            </p>
           </div>
         </div>
         <div class="row flex-column-reverse flex-xl-row">
@@ -192,7 +218,7 @@
     </section>
 
     <section class="bg-green">
-      <div class="container">
+      <div class="content-container">
         <div class="row">
           <div class="line-break"></div>
         </div>
@@ -200,7 +226,7 @@
     </section>
 
     <section id="whatsinvolved" class="bg-green">
-      <div class="container">
+      <div class="content-container">
         <div class="row">
           <div class="col-lg-12">
             <a class="anchor" id="whats_involved"></a>
@@ -239,207 +265,242 @@
       </div>
     </section>
 
+    <section class="bg-green">
+      <div class="content-container">
+        <div class="row">
+          <div class="line-break"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="genetictesting" class="bg-green">
+      <div class="content-container">
+        <div class="row">
+          <div class="col-lg-12">
+            <a class="anchor" id="genetic_testing"></a>
+            <h2 class="heading">Genetic Testing</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="bodytxt">
+              Wellspring Genetics is independent of any pathology company. It
+              therefore can offer tests from a wide range of Australian and
+              overseas medical laboratories.
+              <br /><br />
+              These laboratories include (in alphabetical order): <br /><br />
+              <a class="link" href="https://www.color.com/"> Color </a> <br />
+              <a class="link" href="https://www.invitae.com/en/"> Invitae </a>
+              <br />
+              <a class="link" href="https://genomicdiagnostics.com.au/">
+                QML via Genomic Diagnostics
+              </a>
+              <br />
+              <a class="link" href="https://www.sonicgenetics.com.au/">
+                Sullivan Nicolaides via Sonic Genetics
+              </a>
+              <br />
+              <a class="link" href="https://www.vcgs.org.au/">
+                VCGS Pathology
+              </a>
+              <br />
+              <br />
+              These laboratories are all certified by the relevant quality
+              assurance authorities for medical testing. This means the results
+              are highly reliable. Surprisingly this quality assurance safeguard
+              is not mandatory for all DNA tests that are sold direct to the
+              public in Australia.
+              <br /><br />
+              Many of these tests are not available in the public health system,
+              and prenatal carrier screening is not offered at all in the public
+              system.
+              <br /><br />
+              The cost of gene testing varies from about $350 to $995 depending
+              on the test requested. The most common test costs about $400.
+              <br /><br />
+              This test cost is paid to the pathology laboratory, not to
+              Wellspring Genetics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="bg-green">
-        <div class="container">
-          <div class="row">
-            <div class="line-break"></div>
+      <div class="content-container">
+        <div class="row">
+          <div class="line-break"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-green">
+      <div class="content-container">
+        <div class="row">
+          <div class="col-lg-12">
+            <a class="anchor" id="freq_asked_questions"></a>
+            <h2 class="heading">Frequently Asked Questions</h2>
           </div>
         </div>
-      </section>
-  
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="bodytxt">
+              <strong>What is the cost of an appointment?</strong>
+              <br /><br />
 
-      
-    <section id="genetictesting" class="bg-green">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <a class="anchor" id="genetic_testing"></a>
-              <h2 class="heading">Genetic Testing</h2>
-            </div>
+              A 30 minute appointment costs $150. A special introductory price
+              for any couple for pre-pregnancy screening is $200.
+              <br /><br />
+              <br />
+              <strong>What is the waiting time for an appointment?</strong>
+              <br /><br />
+
+              Currently within 7 days.
+              <br /><br />
+              <br />
+
+              <strong
+                >Does Medicare or private insurance pay for the
+                appointment?</strong
+              >
+              <br /><br />
+
+              There is no Medicare rebate for the appointment. Private health
+              insurers in Australia usually do not pay for the appointment, but
+              you should check with your insurer as health insurance policies
+              are changing.
+              <br /><br />
+              Visitors from overseas may have medical insurance policies that
+              will cover the cost of the appointment. They will need to check
+              this with their insurance provider.
+            </p>
           </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <p class="bodytxt">
-                  Wellspring Genetics is independent of any pathology company.  It therefore can offer tests from a wide range of Australian and overseas medical laboratories.
-                  <br /><br />
-                  These laboratories include (in alphabetical order): <br /><br />
-                    <a class="link" href="https://www.color.com/"> Color </a> <br />
-                    <a class="link" href="https://www.invitae.com/en/"> Invitae </a> <br />
-                    <a class="link" href="https://genomicdiagnostics.com.au/"> QML via Genomic Diagnostics </a> <br />
-                    <a class="link" href="https://www.sonicgenetics.com.au/"> Sullivan Nicolaides via Sonic Genetics </a> <br />
-                    <a class="link" href="https://www.vcgs.org.au/"> VCGS Pathology </a> <br />
-                    <br />
-                  These laboratories are all certified by the relevant quality assurance authorities for medical testing.  This means the results are highly reliable.  Surprisingly this quality assurance safeguard is not mandatory for all DNA tests that are sold direct to the public in Australia.  
-                  <br /><br />
-                  The cost of gene testing varies from about $350 to $995 depending on the test requested. The most common tests cost about $400.
-                  <br /><br />
-                  This test cost is paid to the pathology laboratory, not to Wellspring Genetics.
-              </p>
-            </div>
+
+          <div class="col-lg-6">
+            <p class="bodytxt">
+              <strong
+                >Does Medicare or private insurance pay for pre-pregnancy or
+                well adult gene testing?</strong
+              >
+              <br /><br />
+
+              No. The cost of gene testing varies from about $350 to $995
+              depending on the test requested. The most common tests cost about
+              $400
+              <br /><br />
+              <br />
+              <strong>Can I bring another family member?</strong>
+              <br /><br />
+
+              Yes for couples testing or a pre-pregnancy appointment. This will
+              cost $200.
+              <br /><br />
+
+              Yes for a well adult appointment, but the second family member
+              needs to book a consecutive time slot if they are planning to have
+              testing for themselves. This consecutive slot will cost the same
+              price of $150.
+              <br /><br />
+
+              Three or more family members cannot be seen at the same time.
+              <br /><br />
+              <br />
+              <strong>Do I need a referral?</strong>
+              <br /><br />
+
+              No referral is needed for appointments at Wellspring Genetics,
+              though patients who have an uncertain diagnosis, or a significant
+              family history of a genetic condition, will need a referral to see
+              Dr Michael Gattas for a medical assessment at Brisbane Genetics.
+
+              <br /><br />
+            </p>
           </div>
         </div>
-      </section>
-  
-      <section class="bg-green">
-          <div class="container">
-            <div class="row">
-              <div class="line-break"></div>
-            </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="green-container w-100">
+        <div class="row">
+          <div class="col-md">
+            <h3 class="subheading">
+              Home
+            </h3>
+            <p class="bodytxt">
+              <a href="index.html#what_do_we_offer" class="link"
+                >What Do We Offer</a
+              >
+              <br />
+              <a href="index.html#genetic_testing" class="link"
+                >Genetic Testing</a
+              >
+              <br />
+              <a href="index.html#our_team" class="link">Our Team</a> <br />
+              <a href="index.html#get_in_touch" class="link">Get In Touch</a>
+              <br />
+            </p>
           </div>
-        </section>
 
+          <div class="col-md">
+            <h3 class="subheading">
+              Appointments
+            </h3>
+            <p class="bodytxt">
+              <a href="appointments.html#who_should_attend" class="link"
+                >Who Should Attend?</a
+              >
+              <br />
+              <a href="appointments.html#whats_involved" class="link"
+                >What's Involved?</a
+              >
+              <br />
+              <a href="appointments.html#genetic_testing" class="link"
+                >Genetic Testing</a
+              >
+              <br />
+              <a href="appointments.html#freq_asked_questions" class="link"
+                >FAQ</a
+              >
+              <br />
+            </p>
+          </div>
 
+          <div class="col-md">
+            <h3 class="subheading">
+              Contact
+            </h3>
+            <p class="bodytxt">
+              <a href="tel:0733563896" class="link">07 3356 3896</a> <br />
+              <a href="mailto:email@wellspringgenetics.com.au" class="link"
+                >email@wellspringgenetics.com.au</a
+              >
+              <br />
+              <a href="https://brisbanegenetics.com.au" class="link"
+                >Brisbane Genetics Wesbite</a
+              >
+              <br />
+            </p>
+          </div>
 
-        <section id="faq" class="bg-green">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <a class="anchor" id="freq_asked_questions"></a>
-                  <h2 class="heading">Frequently Asked Questions</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <p class="bodytxt">
-                      <strong>What is the cost of an appointment?</strong>
-                      <br /><br />
-
-                      A 30 minute appointment costs $150. A special introductory price for any couple for pre-pregnancy screening is $200.
-                      <br /><br /> 
-                      <br /> 
-                      <strong>What is the waiting time for an appointment?</strong>
-                      <br /><br />
-
-                      Currently within 7 days.
-                      <br /><br />
-                      <br /> 
-                      
-                      <strong>Does Medicare or private insurance pay for the appointment?</strong>
-                      <br /><br />
-
-                      There is no Medicare rebate for the appointment. Private health insurers in Australia usually do not pay for the appointment, but you should check with your insurer as health insurance policies are changing. 
-                      <br /><br />                   
-                      Visitors from overseas may have medical insurance policies that will cover the cost of the appointment.  They will need to check this with their insurance provider.
-                      
-                  </p>
-                </div>
-
-                <div class="col-lg-6">
-                    <p class="bodytxt">
-                        <strong>Does Medicare or private insurance pay for pre-pregnancy or well adult gene testing?</strong>
-                        <br /><br />
-  
-                        No. The cost of gene testing varies from about $350 to $995 depending on the test requested. The most common tests cost about $400
-                        <br /><br />
-                        <br /> 
-                        <strong>Can I bring another family member?</strong>
-                        <br /><br />
-  
-                        Yes for couples testing or a pre-pregnancy appointment.  This will cost $200.
-                        <br /><br />
-
-                        Yes for a well adult appointment, but the second family member needs to book a consecutive time slot if they are planning to have testing for themselves.  This will cost the same price of $150.
-                        <br /><br />
-
-                        Three or more family members cannot be seen at the same time.
-                        <br /><br />
-                        <br /> 
-                        <strong>Do I need a referral?</strong>
-                        <br /><br />
-  
-                        No referral is needed for appointments at Wellspring Genetics.
-
-                        <br /><br />                   
-                        
-                    </p>
-                  </div>
-
-              </div>
-            </div>
-          </section>
-
-          <footer>
-              <div class="green-container w-100">
-                <div class="row">
-                  <div class="col-md">
-                    <h3 class="subheading">
-                      Home
-                    </h3>
-                    <p class="bodytxt">
-                      <a href="index.html#what_do_we_offer" class="link"
-                        >What Do We Offer</a
-                      >
-                      <br />
-                      <a href="index.html#genetic_testing" class="link"
-                        >Genetic Testing</a
-                      >
-                      <br />
-                      <a href="index.html#our_team" class="link">Our Team</a> <br />
-                      <a href="index.html#get_in_touch" class="link">Get In Touch</a>
-                      <br />
-                    </p>
-                  </div>
-        
-                  <div class="col-md">
-                    <h3 class="subheading">
-                      Appointments
-                    </h3>
-                    <p class="bodytxt">
-                      <a href="appointments.html#who_should_attend" class="link"
-                        >Who Should Attend?</a
-                      >
-                      <br />
-                      <a href="appointments.html#whats_involved" class="link"
-                        >What's Involved?</a
-                      >
-                      <br />
-                      <a href="appointments.html#genetic_testing" class="link"
-                        >Genetic Testing</a
-                      >
-                      <br />
-                      <a href="appointments.html#freq_asked_questions" class="link"
-                        >FAQ</a
-                      >
-                      <br />
-                    </p>
-                  </div>
-        
-                  <div class="col-md">
-                    <h3 class="subheading">
-                      Contact
-                    </h3>
-                    <p class="bodytxt">
-                      <a href="tel:0733563896" class="link">07 3356 3896</a> <br />
-                      <a href="mailto:email@wellspringgenetics.com.au" class="link"
-                        >email@wellspringgenetics.com.au</a
-                      >
-                      <br />
-                      <a href="https://brisbanegenetics.com.au" class="link"
-                        >Brisbane Genetics Wesbite</a
-                      >
-                      <br />
-                    </p>
-                  </div>
-        
-                  <div class="col-md">
-                    <h3 class="subheading">
-                      Location
-                    </h3>
-                    <p class="bodytxt">
-                        <a
-                        href="https://www.google.com/maps/search/?api=1&query=75+Nicholson+Street+Greenslopes"
-                        class="link"
-                      >
-                        Nicholson Street Specialist Centre <br />
-                        Suite 107, Level 7 <br />
-                        69-83 Nicholson Street <br />
-                        Greenslopes QLD 4120 <br />
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </footer>
+          <div class="col-md">
+            <h3 class="subheading">
+              Location
+            </h3>
+            <p class="bodytxt">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=75+Nicholson+Street+Greenslopes"
+                class="link"
+              >
+                Nicholson Street Specialist Centre <br />
+                Suite 107, Level 7 <br />
+                69-83 Nicholson Street <br />
+                Greenslopes QLD 4120 <br />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -96,6 +96,8 @@ a:hover {
   color: white;
   text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 0px;
   z-index: 1;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #hero .herobox .btn-outline {
@@ -116,6 +118,10 @@ a:hover {
   max-width: 150px;
   display: block;
   margin: auto;
+}
+
+#appointments p.bodytxt {
+  text-align: center;
 }
 
 #appointments .appt-cell {
@@ -184,11 +190,15 @@ a:hover {
 }
 
 #team .team-member {
-  height: 260px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 260px;
   width: 200px;
   display: block;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #team .row.team-box .person-name {
@@ -305,6 +315,7 @@ a:hover {
   padding-left: 0px !important;
   padding-right: 0px !important;
   padding-top: 12px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1800px) {
@@ -317,6 +328,21 @@ a:hover {
   }
 }
 
+@media only screen and (min-width: 576px) {
+
+  #hero .herobox {
+    top: 60%;
+    transform: translateY(-30%);
+    width: 90%;
+  }
+
+  
+ #team .team-member {
+  top: 50%;
+  transform: translateY(-60%);
+ }
+}
+
 @media only screen and (min-width: 992px) {
   .blue-container {
     width: 70%;
@@ -326,9 +352,6 @@ a:hover {
     text-align: left !important;
   }
 
-  #team .team-member {
-    margin-top: 40%;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -349,7 +372,8 @@ a:hover {
   #hero .herobox {
     margin-left: 10%;
     width: 500px;
-    transform: translateY(-65%);
+    top: 40%;
+    transform: translateY(-30%);
   }
 
   #hero .herobox .tagline {
@@ -360,6 +384,8 @@ a:hover {
     font-size: 40px;
     font-weight: 700px;
     line-height: 1.5em;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   #hero .herobox .btn-outline {
@@ -370,6 +396,10 @@ a:hover {
 
   #hero .herobox .tagline .improve {
     text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+  }
+
+  #appointments p.bodytxt {
+    text-align: left;
   }
 
   #genetic-testing .card-body {
@@ -402,4 +432,6 @@ a:hover {
   #get-in-touch .icon-small {
     margin-right: auto;
   }
+
+
 }

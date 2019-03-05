@@ -66,7 +66,7 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .grey-container .row {
-  width: 85% !important;
+  width: 85%;
   margin: auto;
 }
 
@@ -106,7 +106,7 @@ h3.subheading {
 p.bodytxt {
   font-size: 18px;
   padding: 25px;
-  text-align: center;
+  text-align: left;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -186,7 +186,7 @@ p.bodytxt {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  width: 280px;
+  width: 260px;
   padding: 1.2em;
   margin-top: 0.5em;
   margin-right: 0em;
@@ -202,7 +202,8 @@ p.bodytxt {
   margin-right: 20%;
 }
 
-footer {
+footer p.bodytxt {
+  text-align: center;
 }
 
 footer .green-container {
@@ -228,23 +229,23 @@ footer p.bodytxt {
 
 @media only screen and (min-width: 1800px) {
   .container {
-    max-width: 60% !important;
+    max-width: 75% !important;
   }
 
   .green-container .row {
-    width: 75% !important;
+    width: 75%;
     margin: auto;
   }
 
   .grey-container .row {
-    width: 75% !important;
+    width: 75%;
     margin: auto;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .container {
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 
@@ -280,7 +281,7 @@ footer p.bodytxt {
   }
 
   p.bodytxt {
-    text-align: left;
+    text-align: left !important;
   }
 
   #mainNavBar .navbar-nav {
