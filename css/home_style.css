@@ -19,7 +19,7 @@ a:hover {
   color: #2d2d2d;
 }
 
-.link-contact:hover { 
+.link-contact:hover {
   color: #1a9d9e;
 }
 
@@ -178,7 +178,6 @@ a:hover {
   margin-bottom: 20px;
 }
 
-
 #team .row.team-box {
   background-color: #1a9d9e;
   width: 95%;
@@ -240,7 +239,6 @@ a:hover {
 
 #get-in-touch {
   margin-bottom: 75px;
-
 }
 
 #get-in-touch .row .line-break {
@@ -316,7 +314,7 @@ a:hover {
 
 #get-in-touch p.bodytxt {
   color: #2d2d2d;
-  font-size: 1em;
+  font-size: 0.9em;
   padding-left: 0px !important;
   padding-right: 0px !important;
   padding-top: 12px;
@@ -334,17 +332,15 @@ a:hover {
 }
 
 @media only screen and (min-width: 1400px) {
-
 }
 
 @media only screen and (min-width: 576px) {
-
   #hero .herobox .tagline {
     font-size: 50px;
   }
 
   #hero .herobox .tagline .improve {
-    font-size: 55px;;
+    font-size: 55px;
   }
 
   #hero .herobox {
@@ -353,11 +349,14 @@ a:hover {
     width: 90%;
   }
 
-  
- #team .team-member {
-  top: 50%;
-  transform: translateY(-60%);
- }
+  #team .team-member {
+    top: 50%;
+    transform: translateY(-60%);
+  }
+
+  #get-in-touch p.bodytxt {
+    font-size: 1.1em;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -368,7 +367,6 @@ a:hover {
   #get-in-touch .row.contact .col-md-8 p.bodytxt {
     text-align: left !important;
   }
-
 }
 
 @media only screen and (min-width: 1200px) {
@@ -449,10 +447,9 @@ a:hover {
   #get-in-touch .icon-small {
     margin-right: auto;
   }
-    
+
   #get-in-touch p.bodytxt {
     color: #2d2d2d;
     font-size: 18px;
   }
-
 }
