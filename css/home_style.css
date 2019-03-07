@@ -323,7 +323,7 @@ a:hover {
 
 @media only screen and (min-width: 1800px) {
   #genetic-testing .card-body {
-    min-height: 550px !important;
+    min-height: 575px !important;
   }
 
   .blue-container {
