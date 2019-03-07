@@ -16,6 +16,10 @@ a.anchor {
   visibility: hidden;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -140,7 +144,6 @@ p.bodytxt {
   color: #ffffff;
   border-color: #2d2d2d;
 }
-
 
 #mainNavBar .navbar-nav .nav-item .nav-link.active,
 #mainNavBar .navbar-nav .nav-item .nav-link:hover {
@@ -272,20 +275,17 @@ footer p.bodytxt {
     padding-left: 1.5em;
   }
 
-  
   .green-container .row {
     width: 90%;
     margin: auto;
   }
-
-
 }
 
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 95%;
   }
-  
+
   .grey-container .row {
     width: 85%;
     margin: auto;
