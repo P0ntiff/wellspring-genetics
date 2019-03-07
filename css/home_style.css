@@ -178,8 +178,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
+
 #team .row.team-box {
   background-color: #1a9d9e;
+  width: 95%;
   margin: auto;
   padding-left: 2%;
   padding-right: 2%;
@@ -223,7 +225,8 @@ a:hover {
 #team p.bodytxt {
   font-size: 16px;
   padding-top: 0em;
-  padding-right: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 #more {
@@ -272,6 +275,7 @@ a:hover {
   border-bottom: none !important;
   padding-top: 20px;
   padding-left: 0px;
+  padding-right: 0px;
   width: 100%;
 }
 
@@ -312,6 +316,7 @@ a:hover {
 
 #get-in-touch p.bodytxt {
   color: #2d2d2d;
+  font-size: 1em;
   padding-left: 0px !important;
   padding-right: 0px !important;
   padding-top: 12px;
@@ -444,6 +449,10 @@ a:hover {
   #get-in-touch .icon-small {
     margin-right: auto;
   }
-
+    
+  #get-in-touch p.bodytxt {
+    color: #2d2d2d;
+    font-size: 18px;
+  }
 
 }
