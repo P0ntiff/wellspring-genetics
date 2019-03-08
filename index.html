@@ -1,613 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Wellspring Genetics</title>
-    <meta charset="utf-8" />
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+  <title>Wellspring Genetics</title>
+  <meta charset="utf-8" />
 
-    <!-- stylesheets-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/home_style.css" />
-    <link rel="stylesheet" href="css/common.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Bootstrap scripts-->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+  <!-- stylesheets-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/home_style.css" />
+  <link rel="stylesheet" href="css/common.css" />
 
-    <script src="js/scripts.js"></script>
+  <!-- Bootstrap scripts-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <!--- <a class="text-primary" href="appointments.html">Appointments</a> -->
-  </head>
+  <script src="js/scripts.js"></script>
 
-  <body>
-    <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNavBar">
-      <div class="container">
-        <a href="index.html">
-          <img
-            src="images/wellspring_logo.png"
-            alt="Wellspring Genetics"
-            class="navbar-brand js-scroll-trigger"
-        /></a>
-        <button
-          class="navbar-toggler navbar-toggler-right ham-menu"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <img src="images/hamburger.svg" alt="Menu" id="hamburger" />
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="appointments.html"
-                role="button"
-                aria-haspopup="true"
-                >Appointments</a
-              >
-              <div class="dropdown-menu">
-                <a
-                  class="dropdown-item"
-                  href="appointments.html#who_should_attend"
-                  >Who Should Attend?</a
-                >
-                <a class="dropdown-item" href="appointments.html#whats_involved"
-                  >What's Involved?</a
-                >
-                <a
-                  class="dropdown-item"
-                  href="appointments.html#genetic_testing"
-                  >Genetic Testing</a
-                >
-                <a
-                  class="dropdown-item"
-                  href="appointments.html#freq_asked_questions"
-                  >FAQ</a
-                >
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item btn-nav">
-              <a
-                class="nav-link btn btn-outline"
-                href="https://widget.appointuit.com/prac_42098"
-                ><span class="btn-text text-uppercase"> Book Online</span></a
-              >
-            </li>
-          </ul>
+  <!--- <a class="text-primary" href="appointments.html">Appointments</a> -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNavBar">
+    <div class="container">
+      <a href="index.html">
+        <img src="images/wellspring_logo.png" alt="Wellspring Genetics" class="navbar-brand js-scroll-trigger" /></a>
+      <button class="navbar-toggler navbar-toggler-right ham-menu" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="images/hamburger.svg" alt="Menu" id="hamburger" />
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="appointments.html" role="button"
+              aria-haspopup="true">Appointments</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="appointments.html#who_should_attend">Who Should Attend?</a>
+              <a class="dropdown-item" href="appointments.html#whats_involved">What's Involved?</a>
+              <a class="dropdown-item" href="appointments.html#genetic_testing">Genetic Testing</a>
+              <a class="dropdown-item" href="appointments.html#freq_asked_questions">FAQ</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item btn-nav">
+            <a class="nav-link btn btn-outline" href="https://widget.appointuit.com/prac_42098"><span class="btn-text text-uppercase">
+                Book Online</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="container">
+      <div class="herobox">
+        <div class="row">
+          <div class="tagline">
+            <span class="improve">Improve</span> your health with genetic
+            counselling and testing
+          </div>
+        </div>
+        <div class="row">
+          <a class="btn btn-outline" href="https://widget.appointuit.com/prac_42098"><span class="btn-text">Make An
+              Appointment</span></a>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <section id="hero">
-      <div class="container">
-        <div class="herobox">
+  <section id="appointments">
+    <div class="green-container">
+      <div class="row">
+        <div class="col-lg-12">
+          <a class="anchor" id="what_do_we_offer"></a>
+          <h2 class="heading">What do we offer?</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4">
+          <img class="img-fluid wellspring-icon" alt="prenatal" src="images/baby.svg" />
+        </div>
+        <div class="col-xl-8">
+          <h3 class="subheading text-uppercase">
+            Prenatal or Pre-Pregnancy Appointment
+          </h3>
+          <p class="bodytxt">
+            For couples and single patients interested in gene testing to
+            decrease their chance of having a child with a serious health
+            problem.
+            <br />
+            <br />
+            For couples using either natural conception or IVF to have a
+            child.
+          </p>
+        </div>
+      </div>
+      <div class="row appt-cell">
+        <div class="col-xl-6"></div>
+        <div class="col-xl-6 text-center">
+          <a class="btn btn-xl btn-outline" href="appointments.html#pre_natal_appointment"><span class="btn-text">Learn
+              More</span></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4">
+          <img class="img-fluid wellspring-icon" alt="pedigree" src="images/pedigree.svg" />
+        </div>
+        <div class="col-xl-8">
+          <h3 class="subheading text-uppercase">Well Adult Appointment</h3>
+          <p class="bodytxt">
+            For healthy adults interested in a gene test that may predict a
+            future health problem.
+            <br />
+            <br />
+            Tests look for genes that can predispose to cancer, cardiovascular
+            diseases and others
+          </p>
+        </div>
+      </div>
+      <div class="row appt-cell">
+        <div class="col-xl-6"></div>
+        <div class="col-xl-6 text-center">
+          <a class="btn btn-outline" href="appointments.html#well_adult_appointment"><span class="btn-text">Learn More</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="genetic-testing">
+    <div class="grey-container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <a class="anchor" id="genetic_testing"></a>
+          <h2 class="heading">Genetic Testing</h2>
+        </div>
+      </div>
+      <div class="row text-center my-2">
+        <div class="col-lg-4 mb-4">
+          <div class="card border-1">
+            <div class="card-body d-flex flex-column justify-content-start align-items-center">
+              <div class="icon-holder">
+                <img class="img-fluid testing-icon" alt="lab test" src="images/test.svg" />
+              </div>
+              <h4 class="card-title">
+                Certified, world-leading laboratories
+              </h4>
+              <p class="card-text">
+                Wellspring Genetics uses leading Australian and international
+                laboratories including
+                <strong>Color, Invitae, QML via Genomic Diagnostics, Sullivan
+                  Nicolaides via Sonic Genetics, and VCGS Pathology.
+                </strong>
+                <br />
+                <br />
+                All are certified by the relevant quality assurance
+                authorities for medical testing.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card border-1">
+            <div class="card-body d-flex flex-column justify-content-start align-items-center">
+              <div class="icon-holder">
+                <img class="img-fluid testing-icon" alt="affordable" src="images/bill.svg" />
+              </div>
+              <h4 class="card-title">Affordable</h4>
+              <p class="card-text">
+                The cost of gene testing varies from about $350 to $995
+                depending on the test required. The most common test costs
+                about $400.
+                <br />
+                <br />
+                This cost is paid to the pathology laboratory, not Wellspring
+                Genetics.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card border-1">
+            <div class="card-body d-flex flex-column justify-content-start align-items-center">
+              <div class="icon-holder">
+                <img class="img-fluid testing-icon" alt="rapid access" src="images/fast.svg" />
+              </div>
+              <h4 class="card-title">Rapid Access</h4>
+              <p class="card-text">
+                Wellspring Genetics will aim to see any patients within two
+                weeks. A patient in the public hospital system may have to
+                wait up to 12 months.
+                <br />
+                <br />
+                Any patient with medical issues that need to be discussed can
+                also be offered a fast track appointment to see Dr Michael
+                Gattas at Brisbane Genetics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="grey-container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <a class="anchor" id="our_team"></a>
+          <h2 class="heading">Our Team</h2>
+        </div>
+      </div>
+      <div class="row team-box">
+        <div class="col-md-3">
+          <img class="img-fluid team-member" alt="dr gattas" src="images/drgattas.png" />
+        </div>
+        <div class="col-md-9">
+          <h2 class="person-name">
+            Dr Gattas <span class="quals"> MBBS (Hons) FRACP</span>
+          </h2>
+          <p class="bodytxt">
+            Dr Gattas is a Physician or Medical Specialist who has completed
+            sub-specialty training in Clinical Genetics.
+            <br />
+            <br />
+            Dr Gattas graduated with honours from Sydney University Medical
+            School in 1986. He moved to Brisbane in 1988 to complete his
+            training in Paediatrics at the Mater Children’s Hospital. He then
+            moved to Melbourne with his young family and started training in
+            Clinical Genetics as a Fellow at the Murdoch Children’s Research
+            Institute. The next 3 years were spent in Birmingham in England
+            working in the West Midlands Clinical Genetics Service. He has
+            always worked in clinical practice, and not in research or
+            laboratory genetics practice.
+
+            <br />
+            <span id="more"><br />
+              Dr Gattas returned to Brisbane in 1996 and has worked for over
+              20 years in public hospital practice at
+              <a href="https://www.health.qld.gov.au/ghq" class="link">Genetic Health Qld</a>. He started his private
+              practice at
+              <a href="https://brisbanegenetics.com.au/" class="link">Brisbane Genetics</a>
+              in 2004. He has a broad experience in all aspects of genetics,
+              including cancer genetics, chromosome abnormalities, paediatric
+              genetics, IVF and preimplantation genetic diagnosis (PGD). He
+              was an author of one of the earliest papers on the use of
+              video-consultation for clinical genetics practice in 2001.
+            </span>
+          </p>
+          <div>
+            <button class="btn btn-outline read-more-btn btn-text" id="moreBtn" onclick="readMore()">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row team-box">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+          <h2 class="person-name">Genetic Counsellor</h2>
+          <p class="bodytxt">
+            <br />
+            <br />
+
+            <br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="get-in-touch">
+    <div class="blue-container">
+      <div class="row">
+        <div class="col-md-12">
+          <a class="anchor" id="get_in_touch"></a>
+          <h2 class="heading">Get In Touch</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="line-break"></div>
+      </div>
+      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <div class="forms">
+          <div class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-8">
+              <input type="text" class="form-control" id="enter-name" placeholder="Name" name="name" />
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-md-8">
+              <input type="email" class="form-control" id="enter-email" placeholder="Email Address" name="email" />
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-md-8">
+              <input type="tel" class="form-control" id="enter-phone" placeholder="Phone Number" name="number" />
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-md-12 message">
+              <textarea class="form-control" id="enter-message" placeholder="Enter Message" rows="6" name="message"></textarea>
+            </div>
+          </div>
+
           <div class="row">
-            <div class="tagline">
-              <span class="improve">Improve</span> your health with genetic
-              counselling and testing
-            </div>
+            <button class="btn btn-outline" type="submit">Submit</button>
           </div>
           <div class="row">
-            <a
-              class="btn btn-outline"
-              href="https://widget.appointuit.com/prac_42098"
-              ><span class="btn-text">Make An Appointment</span></a
-            >
+            <div class="line-break long"></div>
           </div>
+
+          <div class="row contact">
+            <div class="col-md-4">
+              <img class="img-fluid icon-small" alt="phone" src="images/phone.svg" />
+            </div>
+            <div class="col-md-8">
+              <p class="bodytxt">
+                <a href="tel:0735563896" class="link-contact">07 3556 3896</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row contact">
+            <div class="col-md-4">
+              <img class="img-fluid icon-small" alt="email" src="images/email.svg" />
+            </div>
+            <div class="col-md-8">
+              <p class="bodytxt">
+                <a href="mailto:email@wellspringgenetics.com.au" class="link-contact">email@wellspringgenetics.com.au</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row contact">
+            <div class="col-md-4">
+              <img class="img-fluid icon-small" alt="pin" src="images/pin.svg" />
+            </div>
+            <div class="col-md-8">
+              <p class="bodytxt">
+                <a href="https://www.google.com/maps/search/?api=1&query=75+Nicholson+Street+Greenslopes" class="link-contact">
+                  Nicholson Street Specialist Centre <br />
+                  Suite 107, Level 7 <br />
+                  69-83 Nicholson Street <br />
+                  Greenslopes QLD 4120 <br />
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="green-container w-100">
+      <div class="row">
+        <div class="col-md">
+          <h3 class="subheading">
+            Home
+          </h3>
+          <p class="bodytxt">
+            <a href="index.html#what_do_we_offer" class="link">What Do We Offer</a>
+            <br />
+            <a href="index.html#genetic_testing" class="link">Genetic Testing</a>
+            <br />
+            <a href="index.html#our_team" class="link">Our Team</a> <br />
+            <a href="index.html#get_in_touch" class="link">Get In Touch</a>
+            <br />
+          </p>
+        </div>
+
+        <div class="col-md">
+          <h3 class="subheading">
+            Appointments
+          </h3>
+          <p class="bodytxt">
+            <a href="appointments.html#who_should_attend" class="link">Who Should Attend?</a>
+            <br />
+            <a href="appointments.html#whats_involved" class="link">What's Involved?</a>
+            <br />
+            <a href="appointments.html#genetic_testing" class="link">Genetic Testing</a>
+            <br />
+            <a href="appointments.html#freq_asked_questions" class="link">FAQ</a>
+            <br />
+          </p>
+        </div>
+
+        <div class="col-md">
+          <h3 class="subheading">
+            Contact
+          </h3>
+          <p class="bodytxt">
+            <a href="tel:0735563896" class="link">07 3556 3896</a> <br />
+            <a href="mailto:email@wellspringgenetics.com.au" class="link">email@wellspringgenetics.com.au</a>
+            <br />
+            <a href="https://brisbanegenetics.com.au" class="link">Brisbane Genetics Wesbite</a>
+            <br />
+          </p>
+        </div>
+
+        <div class="col-md">
+          <h3 class="subheading">
+            Location
+          </h3>
+          <p class="bodytxt">
+            <a href="https://www.google.com/maps/search/?api=1&query=75+Nicholson+Street+Greenslopes" class="link">
+              Nicholson Street Specialist Centre <br />
+              Suite 107, Level 7 <br />
+              69-83 Nicholson Street <br />
+              Greenslopes QLD 4120 <br />
+            </a>
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
+</body>
 
-    <section id="appointments">
-      <div class="green-container">
-        <div class="row">
-          <div class="col-lg-12">
-            <a class="anchor" id="what_do_we_offer"></a>
-            <h2 class="heading">What do we offer?</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xl-4">
-            <img
-              class="img-fluid wellspring-icon"
-              alt="prenatal"
-              src="images/baby.svg"
-            />
-          </div>
-          <div class="col-xl-8">
-            <h3 class="subheading text-uppercase">
-              Prenatal or Pre-Pregnancy Appointment
-            </h3>
-            <p class="bodytxt">
-              For couples and single patients interested in gene testing to
-              decrease their chance of having a child with a serious health
-              problem.
-              <br />
-              <br />
-              For couples using either natural conception or IVF to have a
-              child.
-            </p>
-          </div>
-        </div>
-        <div class="row appt-cell">
-          <div class="col-xl-6"></div>
-          <div class="col-xl-6 text-center">
-            <a
-              class="btn btn-xl btn-outline"
-              href="appointments.html#pre_natal_appointment"
-              ><span class="btn-text">Learn More</span></a
-            >
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xl-4">
-            <img
-              class="img-fluid wellspring-icon"
-              alt="pedigree"
-              src="images/pedigree.svg"
-            />
-          </div>
-          <div class="col-xl-8">
-            <h3 class="subheading text-uppercase">Well Adult Appointment</h3>
-            <p class="bodytxt">
-              For healthy adults interested in a gene test that may predict a
-              future health problem.
-              <br />
-              <br />
-              Tests look for genes that can predispose to cancer, cardiovascular
-              diseases and others
-            </p>
-          </div>
-        </div>
-        <div class="row appt-cell">
-          <div class="col-xl-6"></div>
-          <div class="col-xl-6 text-center">
-            <a
-              class="btn btn-outline"
-              href="appointments.html#well_adult_appointment"
-              ><span class="btn-text">Learn More</span></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="genetic-testing">
-      <div class="grey-container">
-        <div class="row">
-          <div class="col-lg-12 text-left">
-            <a class="anchor" id="genetic_testing"></a>
-            <h2 class="heading">Genetic Testing</h2>
-          </div>
-        </div>
-        <div class="row text-center my-2">
-          <div class="col-lg-4 mb-4">
-            <div class="card border-1">
-              <div
-                class="card-body d-flex flex-column justify-content-start align-items-center"
-              >
-                <div class="icon-holder">
-                  <img
-                    class="img-fluid testing-icon"
-                    alt="lab test"
-                    src="images/test.svg"
-                  />
-                </div>
-                <h4 class="card-title">
-                  Certified, world-leading laboratories
-                </h4>
-                <p class="card-text">
-                  Wellspring Genetics uses leading Australian and international
-                  laboratories including
-                  <strong
-                    >Color, Invitae, QML via Genomic Diagnostics, Sullivan
-                    Nicolaides via Sonic Genetics, and VCGS Pathology.
-                  </strong>
-                  <br />
-                  <br />
-                  All are certified by the relevant quality assurance
-                  authorities for medical testing.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card border-1">
-              <div
-                class="card-body d-flex flex-column justify-content-start align-items-center"
-              >
-                <div class="icon-holder">
-                  <img
-                    class="img-fluid testing-icon"
-                    alt="affordable"
-                    src="images/bill.svg"
-                  />
-                </div>
-                <h4 class="card-title">Affordable</h4>
-                <p class="card-text">
-                  The cost of gene testing varies from about $350 to $995
-                  depending on the test required. The most common test costs
-                  about $400.
-                  <br />
-                  <br />
-                  This cost is paid to the pathology laboratory, not Wellspring
-                  Genetics.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card border-1">
-              <div
-                class="card-body d-flex flex-column justify-content-start align-items-center"
-              >
-                <div class="icon-holder">
-                  <img
-                    class="img-fluid testing-icon"
-                    alt="rapid access"
-                    src="images/fast.svg"
-                  />
-                </div>
-                <h4 class="card-title">Rapid Access</h4>
-                <p class="card-text">
-                  Wellspring Genetics will aim to see any patients within two
-                  weeks. A patient in the public hospital system may have to
-                  wait up to 12 months.
-                  <br />
-                  <br />
-                  Any patient with medical issues that need to be discussed can
-                  also be offered a fast track appointment to see Dr Michael
-                  Gattas at Brisbane Genetics.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="team">
-      <div class="grey-container">
-        <div class="row">
-          <div class="col-lg-12 text-left">
-            <a class="anchor" id="our_team"></a>
-            <h2 class="heading">Our Team</h2>
-          </div>
-        </div>
-        <div class="row team-box">
-          <div class="col-md-3">
-            <img
-              class="img-fluid team-member"
-              alt="dr gattas"
-              src="images/drgattas.png"
-            />
-          </div>
-          <div class="col-md-9">
-            <h2 class="person-name">
-              Dr Gattas <span class="quals"> MBBS (Hons) FRACP</span>
-            </h2>
-            <p class="bodytxt">
-              Dr Gattas is a Physician or Medical Specialist who has completed
-              sub-specialty training in Clinical Genetics.
-              <br />
-              <br />
-              Dr Gattas graduated with honours from Sydney University Medical
-              School in 1986. He moved to Brisbane in 1988 to complete his
-              training in Paediatrics at the Mater Children’s Hospital. He then
-              moved to Melbourne with his young family and started training in
-              Clinical Genetics as a Fellow at the Murdoch Children’s Research
-              Institute. The next 3 years were spent in Birmingham in England
-              working in the West Midlands Clinical Genetics Service. He has
-              always worked in clinical practice, and not in research or
-              laboratory genetics practice.
-
-              <br />
-              <span id="more"
-                ><br />
-                Dr Gattas returned to Brisbane in 1996 and has worked for over
-                20 years in public hospital practice at
-                <a href="https://www.health.qld.gov.au/ghq" class="link"
-                  >Genetic Health Qld</a
-                >. He started his private practice at
-                <a href="https://brisbanegenetics.com.au/" class="link"
-                  >Brisbane Genetics</a
-                >
-                in 2004. He has a broad experience in all aspects of genetics,
-                including cancer genetics, chromosome abnormalities, paediatric
-                genetics, IVF and preimplantation genetic diagnosis (PGD). He
-                was an author of one of the earliest papers on the use of
-                video-consultation for clinical genetics practice in 2001.
-              </span>
-            </p>
-            <div>
-              <button
-                class="btn btn-outline read-more-btn btn-text"
-                id="moreBtn"
-                onclick="readMore()"
-              >
-                Read More
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row team-box">
-          <div class="col-md-3"></div>
-          <div class="col-md-9">
-            <h2 class="person-name">Genetic Counsellor</h2>
-            <p class="bodytxt">
-              <br />
-              <br />
-
-              <br />
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="get-in-touch">
-      <div class="blue-container">
-        <div class="row">
-          <div class="col-md-12">
-            <a class="anchor" id="get_in_touch"></a>
-            <h2 class="heading">Get In Touch</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="line-break"></div>
-        </div>
-        <form
-          name="contact"
-          method="POST"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
-        >
-          <div class="forms">
-            <div class="hidden">
-              <label
-                >Don’t fill this out if you're human: <input name="bot-field"
-              /></label>
-            </div>
-            <div class="row form-group">
-              <div class="col-md-8">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="enter-name"
-                  placeholder="Name"
-                  name="name"
-                />
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-md-8">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="enter-email"
-                  placeholder="Email Address"
-                  name="email"
-                />
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-md-8">
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="enter-phone"
-                  placeholder="Phone Number"
-                  name="number"
-                />
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-md-12 message">
-                <textarea
-                  class="form-control"
-                  id="enter-message"
-                  placeholder="Enter Message"
-                  rows="6"
-                  name="message"
-                ></textarea>
-              </div>
-            </div>
-
-            <div class="row">
-              <button class="btn btn-outline" type="submit">Submit</button>
-            </div>
-            <div class="row">
-              <div class="line-break long"></div>
-            </div>
-
-            <div class="row contact">
-              <div class="col-md-4">
-                <img
-                  class="img-fluid icon-small"
-                  alt="phone"
-                  src="images/phone.svg"
-                />
-              </div>
-              <div class="col-md-8">
-                <p class="bodytxt">
-                  <a href="tel:0733563896" class="link-contact">07 3356 3896</a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row contact">
-              <div class="col-md-4">
-                <img
-                  class="img-fluid icon-small"
-                  alt="email"
-                  src="images/email.svg"
-                />
-              </div>
-              <div class="col-md-8">
-                <p class="bodytxt">
-                  <a
-                    href="mailto:email@wellspringgenetics.com.au"
-                    class="link-contact"
-                    >email@wellspringgenetics.com.au</a
-                  >
-                </p>
-              </div>
-            </div>
-
-            <div class="row contact">
-              <div class="col-md-4">
-                <img
-                  class="img-fluid icon-small"
-                  alt="pin"
-                  src="images/pin.svg"
-                />
-              </div>
-              <div class="col-md-8">
-                <p class="bodytxt">
-                  <a
-                    href="https://www.google.com/maps/search/?api=1&query=75+Nicholson+Street+Greenslopes"
-                    class="link-contact"
-                  >
-                    Nicholson Street Specialist Centre <br />
-                    Suite 107, Level 7 <br />
-                    69-83 Nicholson Street <br />
-                    Greenslopes QLD 4120 <br />
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <div class="green-container w-100">
-        <div class="row">
-          <div class="col-md">
-            <h3 class="subheading">
-              Home
-            </h3>
-            <p class="bodytxt">
-              <a href="index.html#what_do_we_offer" class="link"
-                >What Do We Offer</a
-              >
-              <br />
-              <a href="index.html#genetic_testing" class="link"
-                >Genetic Testing</a
-              >
-              <br />
-              <a href="index.html#our_team" class="link">Our Team</a> <br />
-              <a href="index.html#get_in_touch" class="link">Get In Touch</a>
-              <br />
-            </p>
-          </div>
-
-          <div class="col-md">
-            <h3 class="subheading">
-              Appointments
-            </h3>
-            <p class="bodytxt">
-              <a href="appointments.html#who_should_attend" class="link"
-                >Who Should Attend?</a
-              >
-              <br />
-              <a href="appointments.html#whats_involved" class="link"
-                >What's Involved?</a
-              >
-              <br />
-              <a href="appointments.html#genetic_testing" class="link"
-                >Genetic Testing</a
-              >
-              <br />
-              <a href="appointments.html#freq_asked_questions" class="link"
-                >FAQ</a
-              >
-              <br />
-            </p>
-          </div>
-
-          <div class="col-md">
-            <h3 class="subheading">
-              Contact
-            </h3>
-            <p class="bodytxt">
-              <a href="tel:0733563896" class="link">07 3356 3896</a> <br />
-              <a href="mailto:email@wellspringgenetics.com.au" class="link"
-                >email@wellspringgenetics.com.au</a
-              >
-              <br />
-              <a href="https://brisbanegenetics.com.au" class="link"
-                >Brisbane Genetics Wesbite</a
-              >
-              <br />
-            </p>
-          </div>
-
-          <div class="col-md">
-            <h3 class="subheading">
-              Location
-            </h3>
-            <p class="bodytxt">
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=75+Nicholson+Street+Greenslopes"
-                class="link"
-              >
-                Nicholson Street Specialist Centre <br />
-                Suite 107, Level 7 <br />
-                69-83 Nicholson Street <br />
-                Greenslopes QLD 4120 <br />
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
