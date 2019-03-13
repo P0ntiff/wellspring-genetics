@@ -7,8 +7,8 @@ $(window).scroll(function() {
 });
 
 function readMore() {
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("moreBtn");
+  let moreText = document.getElementById("more");
+  let btnText = document.getElementById("moreBtn");
 
   if (moreText.style.display === "inline") {
     btnText.innerHTML = "Read More";
@@ -18,6 +18,20 @@ function readMore() {
     moreText.style.display = "inline";
   }
 }
+
+function readMore2() {
+  let moreText = document.getElementById("more2");
+  let btnText = document.getElementById("moreBtn2");
+
+  if (moreText.style.display === "inline") {
+    btnText.innerHTML = "Read More";
+    moreText.style.display = "none";
+  } else {
+    btnText.innerHTML = "Read Less";
+    moreText.style.display = "inline";
+  }
+}
+
 
 // $(function() {
 //   $(".dropdown-toggle").click(function() {
