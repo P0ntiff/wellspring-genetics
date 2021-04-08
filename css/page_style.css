@@ -47,11 +47,11 @@ p.bodytxt {
 }
 
 #hero.news {
-  background-image: url("../images/beach_sunset.jpg");
+  background-image: url("../images/beach_sunset_compressed.jpg");
 }
 
 #hero.contact {
-  background-image: url("../images/ocean.jpg");
+  background-image: url("../images/ocean_compressed.jpg");
 }
 
 #hero:before {
