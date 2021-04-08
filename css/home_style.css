@@ -52,7 +52,7 @@ a:hover {
 #hero {
   color: #ffffff;
   height: 95%;
-  background-image: url("../images/beach_photo.jpg");
+  background-image: url("../images/beach_photo_compressed.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -376,7 +376,7 @@ a:hover {
 
   #hero {
     height: 95%;
-    background-image: url("../images/beach_photo_crop_3.jpg");
+    background-image: url("../images/beach_photo_crop_3_compressed.jpg");
   }
 
   #hero:before {
